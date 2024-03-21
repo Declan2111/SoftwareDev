@@ -1,5 +1,6 @@
 import unittest
 
+from src.main.python.UC3MTravel import HotelManager
 from src.main.python.UC3MTravel.HotelReservation import HotelReservation
 
 ValidCardNum = 4929319438123457
@@ -8,7 +9,7 @@ ValidName = "Ella Zaugg-James"
 ValidPhone = 123456789
 ValidRoom = "single"
 ValidNumDays = 5
-ValidClass = HotelReservation(ValidID, ValidCardNum, ValidName, ValidPhone, ValidRoom, ValidNumDays)
+ValidClass = HotelManager()
 
 
 class TestHotelReservation(unittest.TestCase):
@@ -141,21 +142,21 @@ class TestHotelReservation(unittest.TestCase):
         self.assertTrue(ValidClass.checkNumDays(2))
 
     # tests boundary value of valid number of days to stay
-    def testValidNumDays3(self):
-        self.assertTrue(ValidClass.checkNumDays(9))
-
-    # tests boundary value of valid number of days to stay
     def testValidNumDays4(self):
         self.assertTrue(ValidClass.checkNumDays(10))
 
+    # tests boundary value of valid number of days to stay
+    def testValidNumDay5(self):
+        self.assertTrue(ValidClass.checkNumDays(9))
+
     # tests boundary value of invalid number of days to stay
-    def testInvalidNumDays4(self):
+    def testInvalidNumDays1(self):
         self.assertFalse(ValidClass.checkNumDays(11))
 
     # tests boundary value of invalid number of days to stay
-    def testInvalidNumDays5(self):
+    def testInvalidNumDays2(self):
         self.assertFalse(ValidClass.checkNumDays(0))
 
     # tests an incorrect data type for num days
-    def testInvalidNumDays6(self):
+    def testInvalidNumDays3(self):
         self.assertFalse(ValidClass.checkNumDays("a"))
