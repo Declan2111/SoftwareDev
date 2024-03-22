@@ -2,20 +2,21 @@ import hashlib
 import json
 import os
 
-from stdnum import es
+# from stdnum import es
 from datetime import datetime
 
-from src.main.python.UC3MTravel import HotelManager
-from src.main.python.UC3MTravel.HotelManagementException import HotelManagementException
+# from UC3MTravel.HotelManager import HotelManager
+from UC3MTravel.HotelManagementException import HotelManagementException
 # Move room_reservation and add_to_json to HotelManager, add excepetions to room_reservation function
 #Keep the rest of the methods and the tests in HotelReservation
 
 class HotelReservation:
-    def __init__(self, IDCARD, creditcardNumb, nAMeAndSURNAME, phonenumber, room_type, numdays):
+    def __init__(self, IDCARD, creditcardNumb, nAMeAndSURNAME, phonenumber, room_type, arrival, numdays):
         self.__crEDITcardnumber = creditcardNumb
         self.__idcard = IDCARD
         justnow = datetime.utcnow()
-        self.__ARRIVAL = "30/05/2024" #datetime.timestamp(justnow)
+        self.__ARRIVAL = arrival
+        self.__reservationdate = datetime.timestamp(justnow)
         self.__NAME_SURNAME = nAMeAndSURNAME
         self.__phonenumber = phonenumber
         self.__roomtype = room_type
@@ -38,6 +39,26 @@ class HotelReservation:
     def CREDITCARD(self):
         return self.__crEDITcardnumber
 
+    @property
+    def phone_number(self):
+        return self.__phonenumber
+
+    @property
+    def arrival_date(self):
+        return self.__ARRIVAL
+
+    @property
+    def num_days(self):
+        return self.__num_days
+
+    @property
+    def room_type(self):
+        return self.__roomtype
+
+    @property
+    def name_surname(self):
+        return self.__NAME_SURNAME
+
     @CREDITCARD.setter
     def CREDITCARD(self, value):
         self.__crEDITcardnumber = value
@@ -55,48 +76,7 @@ class HotelReservation:
         """Returns the md5 signature"""
         return hashlib.md5(self.__str__().encode()).hexdigest()
 
-    # def room_reservation(self, credit_card, name_surname, id_card, phone_number, room_type, arrival_date, num_days):
-    #     if (self.checkCardNum(credit_card) and self.checkName(name_surname) and self.checkID(id_card)
-    #             and self.checkPhone(phone_number) and self.checkRoom(room_type) and self.checkNumDays(num_days)):
-    #         self.add_booking_to_json()
-    #         return self.LOCALIZER
-    #     else:
-    #         raise HotelManagementException("Invalid Input Data")
 
-#     def add_booking_to_json(self):
-#         #localizer = self.LOCALIZER
-#         booking_data = {
-#                 "id_card": self.__idcard,
-#                 "name_surname": self.__NAME_SURNAME,
-#                 "credit_card": self.__crEDITcardnumber,
-#                 "phone_number": self.__phonenumber,
-#                 "arrival_date": self.__ARRIVAL,
-#                 "num_days": self.__num_days,
-#                 "room_type": self.__roomtype
-#             }
-#
-#
-#         if os.path.exists("bookings.json"):
-#             with open("bookings.json", "r") as file:
-#                 bookings = json.load(file)
-#
-#             # Check if id_card already exists in any entry
-#             for entry in bookings:
-#                 if 'id_card' in entry and entry['id_card'] == self.__idcard:
-#                     print("Booking with the same id_card already exists.")
-#                     return
-#
-#         else:
-#             bookings = []
-#
-#         # Add the new booking data
-#         bookings.append(booking_data)
-#
-#         # Write the updated bookings to the JSON file
-#         with open("bookings.json", "w") as file:
-#             json.dump(bookings, file, indent=4)
-#
-#         print("Booking successfully added.")
 #
 # # Example usage:
 # reservation = HotelReservation("12345678Z", 4929319438123457, "Declan Lowney", 123456789, "single", 5)

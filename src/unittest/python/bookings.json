@@ -1,0 +1,12 @@
+[
+    {
+        "id_card": "12345678Z",
+        "name_surname": "Ella Zaugg-James",
+        "credit_card": 4929319438123457,
+        "phone_number": 123456789,
+        "arrival_date": "30/05/2024",
+        "num_days": 5,
+        "room_type": "single",
+        "localizer": "c45cdbc85ababf7d4c215d77a767c94d"
+    }
+]
