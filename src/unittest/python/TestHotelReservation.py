@@ -1,5 +1,9 @@
+import datetime
 import unittest
+from gc import freeze
 
+from freezegun import freeze_time
+from datetime import datetime
 from src.main.python.UC3MTravel import HotelManager
 from src.main.python.UC3MTravel.HotelReservation import HotelReservation
 
@@ -9,7 +13,12 @@ ValidName = "Ella Zaugg-James"
 ValidPhone = 123456789
 ValidRoom = "single"
 ValidNumDays = 5
+ValidArrivalDate = "30/05/2024"
+JustNowDate = datetime.timestamp(datetime.utcnow())
 ValidClass = HotelManager()
+ValidReservation = HotelReservation(ValidCardNum, ValidID, ValidName, ValidPhone, ValidRoom, ValidNumDays)
+
+
 
 
 class TestHotelReservation(unittest.TestCase):
@@ -160,3 +169,36 @@ class TestHotelReservation(unittest.TestCase):
     # tests an incorrect data type for num days
     def testInvalidNumDays3(self):
         self.assertFalse(ValidClass.checkNumDays("a"))
+
+    def testValidArrival(self):
+       self.assertTrue(ValidClass.checkArrival(ValidArrivalDate))
+
+    def testInvalidArrival(self):
+        self.assertFalse(ValidClass.checkArrival("30-05-2024"))
+
+    def testInvalidArrival2(self):
+        self.assertFalse(ValidClass.checkArrival("32/05/2024"))
+
+    def testInvalidArrival3(self):
+        self.assertFalse(ValidClass.checkArrival("30/13/2024"))
+
+    def testInvalidArrival4(self):
+        self.assertFalse(ValidClass.checkArrival("30/05/20244"))
+
+    def testInvalidArrival5(self):
+        self.assertFalse(ValidClass.checkArrival("30/05/202"))
+
+    def testInvalidArrival6(self):
+        self.assertFalse(ValidClass.checkArrival("3A/05/2024"))
+
+    def testInvalidArrival7(self):
+        self.assertFalse(ValidClass.checkArrival("30/3Q/2024"))
+
+    def testInvalidArrival8(self):
+        self.assertFalse(ValidClass.checkArrival("30/05/20L4"))
+
+    ### @freeze_time("03/21/2024")
+    def testRoomReservation(self):
+        self.assertEqual(ValidClass.room_reservation(ValidCardNum, ValidName, ValidID, ValidPhone, ValidRoom, ValidArrivalDate, ValidNumDays), ValidReservation.LOCALIZER)
+
+

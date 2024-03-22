@@ -1,9 +1,14 @@
 import json
 import os
+import datetime
+import re
 
-from .HotelManagementException import HotelManagementException
-from .HotelReservation import HotelReservation
+
 from stdnum import es
+
+from src.main.python.UC3MTravel.HotelManagementException import HotelManagementException
+from src.main.python.UC3MTravel.HotelReservation import HotelReservation
+
 
 class HotelManager:
     def __init__(self):
@@ -58,6 +63,12 @@ class HotelManager:
         else:
             return False
 
+
+    def checkArrival(self, arrival_date):
+        pattern = r"\b(0[1-9]|1[0-2])[-/](0[1-9]|[12]\d|3[01])[-/](19\d\d|20\d\d)\b"
+        date_regex = re.compile(pattern)
+        return date_regex.search(arrival_date)
+
     def ReaddatafromJSOn( self, fi):
 
         try:
@@ -75,7 +86,7 @@ class HotelManager:
             req = HotelReservation(IDCARD="12345678Z",creditcardNumb=c,nAMeAndSURNAME="John Doe",phonenumber=p,room_type="single",numdays=3)
         except KeyError as e:
             raise HotelManagementException("JSON Decode Error - Invalid JSON Key") from e
-        if not self.validatecreditcard(c):
+        if not self.checkCardNum(c):
             raise HotelManagementException("Invalid credit card number")
 
         # Close the file
@@ -84,9 +95,9 @@ class HotelManager:
 
     def room_reservation(self, credit_card, name_surname, id_card, phone_number, room_type, arrival_date, num_days):
         if (self.checkCardNum(credit_card) and self.checkName(name_surname) and self.checkID(id_card)
-                and self.checkPhone(phone_number) and self.checkRoom(room_type) and self.checkNumDays(num_days)):
+                and self.checkPhone(phone_number) and self.checkRoom(room_type) and self.checkNumDays(num_days) and self.checkArrival(arrival_date)):
             reservation = HotelReservation(id_card, credit_card, name_surname, phone_number, room_type, num_days)
-            reservation.add_booking_to_json()
+            self.add_booking_to_json(credit_card, name_surname, id_card, phone_number, room_type, arrival_date, num_days)
             return reservation.LOCALIZER
         else:
             raise HotelManagementException("Invalid Input Data")
@@ -126,3 +137,11 @@ class HotelManager:
             json.dump(bookings, file, indent=4)
 
         print("Booking successfully added.")
+
+
+
+# reservation = HotelReservation("12345678Z", 4929319438123457, "Declan Lowney", 123456789, "single", 5)
+# reservation.add_booking_to_json()
+
+#manager = HotelManager()
+#manager.add_booking_to_json(4929319438123457, "Declan Lowney", "12345678Z", 123456789, "suite", "21-03-2024", 5)
