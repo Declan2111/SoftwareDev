@@ -2,6 +2,8 @@ import hashlib
 import json
 import os
 
+from freezegun import freeze_time
+
 # from stdnum import es
 from datetime import datetime
 
@@ -43,21 +45,41 @@ class HotelReservation:
     def phone_number(self):
         return self.__phonenumber
 
+    @phone_number.setter
+    def phone_number(self, value):
+        self.__phonenumber = value
+
     @property
     def arrival_date(self):
         return self.__ARRIVAL
+
+    @arrival_date.setter
+    def arrival_date(self, value):
+        self.__ARRIVAL = value
 
     @property
     def num_days(self):
         return self.__num_days
 
+    @num_days.setter
+    def num_days(self, value):
+        self.__num_days = value
+
     @property
     def room_type(self):
         return self.__roomtype
 
+    @room_type.setter
+    def room_type(self, value):
+        self.__roomtype = value
+
     @property
     def name_surname(self):
         return self.__NAME_SURNAME
+
+    @name_surname.setter
+    def name_surname(self, value):
+        self.__NAME_SURNAME = value
 
     @CREDITCARD.setter
     def CREDITCARD(self, value):
@@ -75,6 +97,10 @@ class HotelReservation:
     def LOCALIZER(self):
         """Returns the md5 signature"""
         return hashlib.md5(self.__str__().encode()).hexdigest()
+
+    def LOCALIZER_FREEZED(self):
+        with freeze_time("05/30/2024"):
+            return hashlib.md5(self.__str__().encode()).hexdigest()
 
 
 #

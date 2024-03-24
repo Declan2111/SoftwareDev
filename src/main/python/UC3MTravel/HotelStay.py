@@ -57,6 +57,14 @@ class HotelStay():
     def departure(self, value):
         self.__departure = value
 
+    def alg(self):
+        return self.__alg
+
+    def typ(self):
+        return self.__type
+
+
+
 
 
 
