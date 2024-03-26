@@ -21,7 +21,7 @@ class HotelManager:
     def checkCardNum(self, card_number):
         card_str = str(card_number)
         if len(str(card_number)) != 16:
-            return False
+            raise HotelManagementException("Invalid Credit Card Number")
 
         total = 0
         for i in range(15):  # Loop through the first 15 digits
@@ -46,29 +46,29 @@ class HotelManager:
 
     # Checks that the name is a valid name with a space in between two strings
     def checkName(self, name):
-        if isinstance(name, str):
-            return 10 <= len(name) <= 50 and ' ' in name.strip()
+        if isinstance(name, str) and (10 <= len(name) <= 50 and ' ' in name.strip()):
+            return True
         else:
             raise HotelManagementException("Invalid Name")
 
     # Checks that the phone is a valid number
     def checkPhone(self, PhoneNum):
-        if isinstance(PhoneNum, int):
-            return len(str(PhoneNum)) == 9 and int(PhoneNum) > 0
+        if isinstance(PhoneNum, int) and (len(str(PhoneNum)) == 9 and int(PhoneNum) > 0):
+            return True
         else:
             raise HotelManagementException("Invalid Phone Number")
 
     # Checks that the room type is correct
     def checkRoom(self, roomType):
-        if isinstance(roomType, str):
-            return roomType.lower() in ["single", "double", "suite"]
+        if isinstance(roomType, str) and (roomType.lower() in ["single", "double", "suite"]):
+            return True
         else:
             raise HotelManagementException("Invalid Room Type")
 
     # Checks that the number of days is in between 1 and 10
     def checkNumDays(self, numDays):
-        if isinstance(numDays, int):
-            return 0 < numDays < 11
+        if isinstance(numDays, int) and (0 < numDays < 11):
+            return True
         else:
             raise HotelManagementException("Invalid Number of Days")
 
