@@ -1,9 +1,13 @@
 import datetime
 import unittest
-# from gc import freeze
+from gc import freeze
 
 # from freezegun import freeze_time
 from datetime import datetime
+
+from freezegun import freeze_time
+
+from src.main.python.UC3MTravel.HotelManagementException import HotelManagementException
 from src.main.python.UC3MTravel.HotelManager import HotelManager
 from src.main.python.UC3MTravel.HotelReservation import HotelReservation
 
@@ -16,7 +20,9 @@ ValidNumDays = 5
 ValidArrivalDate = "30/05/2024"
 JustNowDate = datetime.timestamp(datetime.utcnow())
 ValidClass = HotelManager()
-ValidReservation = HotelReservation(ValidCardNum, ValidID, ValidName, ValidPhone, ValidRoom, ValidNumDays)
+CCException = HotelManagementException("Invalid Credit Card Number")
+
+#ValidReservation = HotelReservation(ValidCardNum, ValidID, ValidName, ValidPhone, ValidRoom, ValidNumDays)
 
 
 
@@ -28,7 +34,10 @@ class TestHotelReservation(unittest.TestCase):
 
     # tests an invalid card number - not luhns compliant
     def testInvalidCard1(self):
-        self.assertFalse(ValidClass.checkCardNum(4929319438123450))
+        #self.assertFalse(ValidClass.checkCardNum(4929319438123450))
+        with self.assertRaises(HotelManagementException):
+            ValidClass.checkCardNum(4929319438123450)
+    # self.assertRaises(HotelManagementException, ValidClass.checkCardNum(4929319438123450))
 
     # tests an invalid card number - incorrect data type
     def testInvalidCard2(self):
@@ -197,8 +206,8 @@ class TestHotelReservation(unittest.TestCase):
     def testInvalidArrival8(self):
         self.assertFalse(ValidClass.checkArrival("30/05/20L4"))
 
-    ### @freeze_time("30/05/2024")
-    #def testRoomReservation(self):
-    #    self.assertEqual(ValidClass.room_reservation(ValidCardNum, ValidName, ValidID, ValidPhone, ValidRoom, ValidArrivalDate, ValidNumDays), ValidReservation.LOCALIZER)
+    # @freeze_time("30/05/2024")
+    # def testRoomReservation(self):
+    #     self.assertEqual(ValidClass.room_reservation(ValidCardNum, ValidName, ValidID, ValidPhone, ValidRoom, ValidArrivalDate, ValidNumDays), ValidReservation.LOCALIZER)
 
 

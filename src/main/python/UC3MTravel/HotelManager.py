@@ -5,9 +5,9 @@ import re
 
 from stdnum import es
 
-from UC3MTravel.HotelManagementException import HotelManagementException
-from UC3MTravel.HotelReservation import HotelReservation
-from UC3MTravel.HotelStay import HotelStay
+from src.main.python.UC3MTravel.HotelManagementException import HotelManagementException
+from src.main.python.UC3MTravel.HotelReservation import HotelReservation
+from src.main.python.UC3MTravel.HotelStay import HotelStay
 
 
 class HotelManager:
@@ -32,45 +32,54 @@ class HotelManager:
                     doubled_digit -= 9
                 total += doubled_digit
 
-        return total % 10 == int(card_str[15]) and len(str(card_number)) == 16
+        if total % 10 == int(card_str[15]) and len(str(card_number)) == 16:
+            return True
+        else:
+            raise HotelManagementException("Invalid Credit Card Number")
 
     # Checks that the ID is valid based on Spanish ID standards
     def checkID(self, IDNum):
-        return es.dni.is_valid(IDNum)
+        if es.dni.is_valid(IDNum):
+            return True
+        else:
+            raise HotelManagementException("Invalid ID Number")
 
     # Checks that the name is a valid name with a space in between two strings
     def checkName(self, name):
         if isinstance(name, str):
             return 10 <= len(name) <= 50 and ' ' in name.strip()
         else:
-            return False
+            raise HotelManagementException("Invalid Name")
 
     # Checks that the phone is a valid number
     def checkPhone(self, PhoneNum):
         if isinstance(PhoneNum, int):
             return len(str(PhoneNum)) == 9 and int(PhoneNum) > 0
         else:
-            return False
+            raise HotelManagementException("Invalid Phone Number")
 
     # Checks that the room type is correct
     def checkRoom(self, roomType):
         if isinstance(roomType, str):
             return roomType.lower() in ["single", "double", "suite"]
         else:
-            return False
+            raise HotelManagementException("Invalid Room Type")
 
     # Checks that the number of days is in between 1 and 10
     def checkNumDays(self, numDays):
         if isinstance(numDays, int):
             return 0 < numDays < 11
         else:
-            return False
+            raise HotelManagementException("Invalid Number of Days")
 
 
     def checkArrival(self, arrival_date):
         pattern = r"\b(0[1-9]|[12]\d|3[01])[/](0[1-9]|1[0-2])[/](19\d\d|20\d\d)\b"
         date_regex = re.compile(pattern)
-        return date_regex.search(arrival_date)
+        if (date_regex.search(arrival_date)):
+            return True
+        else:
+            raise HotelManagementException("Invalid Arrival Date")
 
     def ReaddatafromJSOn( self, fi):
 
@@ -159,7 +168,14 @@ class HotelManager:
             guest_data = json.load(file)
 
             localizer = guest_data["Localizer"]
-            id = guest_data["IDCard"]
+            id = guest_data["IdCard"]
+
+            # make sure there aren't more than one localizer or IDCard keys
+            localizer_count = guest_data.get("Localizer", 0)
+            id_card_count = guest_data.get("IdCard", 0)
+
+            if localizer_count != 1 or id_card_count != 1:
+                raise HotelManagementException("Key Error: More than one Localizer or IdCard found")
             with open("bookings.json", "r") as bookings:
                 bookings = json.load(bookings)
                 for entry in bookings:
@@ -175,13 +191,32 @@ class HotelManager:
                                 self.add_stay_to_json(stay, localizer)
                                 return stay.room_key()
                         else:
-                            return print("id card doesn't match")
-                print("no localizer found in reservation file")
+                            raise HotelManagementException("Id_Card Error: Id not found in bookings file")
+                    else:
+                        raise HotelManagementException("Localizer Error: Localizer not found in bookings file")
 
+    #check to make sure input file follows valid json format and meets assignment requirements
     def validate_guest_file(self, guest_file):
-        #function 2
-        #syntatical analysis
-        return True
+        try:
+            with open(guest_file) as f:
+                DATA = json.load(f)
+        except FileNotFoundError as e:
+            raise HotelManagementException("Wrong file or file path") from e
+        except json.JSONDecodeError as e:
+            raise HotelManagementException("JSON Decode Error - Wrong JSON Format") from e
+
+        try:
+            c = DATA["Localizer"]
+            p = DATA["IdCard"]
+            req = HotelReservation(IDCARD="12345678Z", creditcardNumb=c, nAMeAndSURNAME="John Doe", phonenumber=p,
+                                   room_type="single", numdays=3)
+        except KeyError as e:
+            raise HotelManagementException("JSON Decode Error - Invalid JSON Key") from e
+        if not self.checkCardNum(c):
+            raise HotelManagementException("Invalid credit card number")
+
+        # Close the file
+        return req
 
     def guest_provides_info1(self, id_card, credit_card):
         #function 2?
