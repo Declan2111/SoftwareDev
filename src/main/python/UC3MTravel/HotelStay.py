@@ -1,5 +1,6 @@
 ''' Class HotelStay (GE2.2) '''
-from datetime import datetime
+
+from datetime import datetime, date, time, timedelta
 import hashlib
 
 class HotelStay():
@@ -12,13 +13,19 @@ class HotelStay():
         self.__arrival = justnow
         #timestamp is represented in seconds.miliseconds
         #to add the number of days we must express numdays in seconds
-        self.__departure = self.__arrival + (numdays * 24 * 60 * 60)
+        num_seconds = numdays * 24 * 60 * 60
+
+        # Create a timedelta object for num_seconds
+        delta = timedelta(seconds=num_seconds)
+
+        # Add the timedelta to self.__arrival to get the departure time
+        self.__departure = self.__arrival + delta
 
     def __signature_string(self):
         """Composes the string to be used for generating the key for the room"""
         return "{alg:" + self.__alg + ",typ:" + self.__type + ",localizer:" + \
-            self.__localizer + ",arrival:" + self.__arrival + \
-            ",departure:" + self.__departure + "}"
+            self.__localizer + ",arrival:" + str(self.__arrival) + \
+            ",departure:" + str(self.__departure) + "}"
 
     @property
     def idCard(self):

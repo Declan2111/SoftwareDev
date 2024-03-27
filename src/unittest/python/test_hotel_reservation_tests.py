@@ -25,7 +25,7 @@ CCException = HotelManagementException("Invalid Credit Card Number")
 #ValidReservation = HotelReservation(ValidCardNum, ValidID, ValidName, ValidPhone, ValidRoom, ValidNumDays)
 
 
-
+#May have to change so that the true cases return the localizer instead of true
 
 class TestHotelReservation(unittest.TestCase):
     # tests a valid card number

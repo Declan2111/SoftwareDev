@@ -171,10 +171,18 @@ class HotelManager:
             id = guest_data["IdCard"]
 
             # make sure there aren't more than one localizer or IDCard keys
-            localizer_count = guest_data.get("Localizer", 0)
-            id_card_count = guest_data.get("IdCard", 0)
+            localizer_count = 0
+            id_card_count = 0
 
-            if localizer_count != 1 or id_card_count != 1:
+            for item in guest_data:
+                if 'Localizer' in item:
+                    localizer_count += 1
+
+            for item in guest_data:
+                if 'IdCard' in item:
+                    id_card_count += 1
+
+            if localizer_count > 1 or id_card_count > 1:
                 raise HotelManagementException("Key Error: More than one Localizer or IdCard found")
             with open("bookings.json", "r") as bookings:
                 bookings = json.load(bookings)
@@ -189,7 +197,7 @@ class HotelManager:
                                         room_type) and self.checkNumDays(num_days) and self.checkArrival(entry['arrival_date'])):
                                 stay = HotelStay(id, localizer, num_days, room_type)
                                 self.add_stay_to_json(stay, localizer)
-                                return stay.room_key()
+                                return stay.room_key
                         else:
                             raise HotelManagementException("Id_Card Error: Id not found in bookings file")
                     else:
@@ -208,12 +216,17 @@ class HotelManager:
         try:
             c = DATA["Localizer"]
             p = DATA["IdCard"]
-            req = HotelReservation(IDCARD="12345678Z", creditcardNumb=c, nAMeAndSURNAME="John Doe", phonenumber=p,
-                                   room_type="single", numdays=3)
+            ValidCardNum = 4929319438123457
+            ValidID = "12345678Z"
+            ValidName = "Ella Zaugg-James"
+            ValidPhone = 123456789
+            ValidRoom = "single"
+            ValidNumDays = 5
+            ValidArrivalDate = "30/05/2024"
+            req = HotelReservation(IDCARD=p, creditcardNumb=ValidCardNum, nAMeAndSURNAME=ValidName, phonenumber=ValidPhone,
+                                   room_type="single", arrival="30/05/2024", numdays=3)
         except KeyError as e:
             raise HotelManagementException("JSON Decode Error - Invalid JSON Key") from e
-        if not self.checkCardNum(c):
-            raise HotelManagementException("Invalid credit card number")
 
         # Close the file
         return req
@@ -362,9 +375,9 @@ class HotelManager:
             "alg": stay.alg(),
             "typ": stay.typ(),
             "localizer": localizer,
-            "arrival": stay.arrival(),
-            "departure": stay.departure(),
-            "room_key": stay.room_key()
+            "arrival": stay.arrival.isoformat(),
+            "departure": stay.departure.isoformat(),
+            "room_key": stay.room_key
         }
 
         if os.path.exists("stays.json"):
