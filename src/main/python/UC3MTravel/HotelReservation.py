@@ -7,8 +7,6 @@ from freezegun import freeze_time
 # from stdnum import es
 from datetime import datetime
 
-# from UC3MTravel.HotelManager import HotelManager
-from UC3MTravel.HotelManagementException import HotelManagementException
 # Move room_reservation and add_to_json to HotelManager, add excepetions to room_reservation function
 #Keep the rest of the methods and the tests in HotelReservation
 
