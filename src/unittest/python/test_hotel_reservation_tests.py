@@ -22,7 +22,7 @@ JustNowDate = datetime.timestamp(datetime.utcnow())
 ValidClass = HotelManager()
 CCException = HotelManagementException("Invalid Credit Card Number")
 
-#ValidReservation = HotelReservation(ValidCardNum, ValidID, ValidName, ValidPhone, ValidRoom, ValidNumDays)
+ValidReservation = HotelReservation(ValidCardNum, ValidID, ValidName, ValidPhone, ValidRoom, ValidArrivalDate, ValidNumDays)
 
 
 #May have to change so that the true cases return the localizer instead of true
@@ -421,8 +421,13 @@ class TestHotelReservation(unittest.TestCase):
 
         self.assertEqual(str(context.exception), "Invalid Arrival Date")
 
-    # @freeze_time("30/05/2024")
-    # def testRoomReservation(self):
-    #     self.assertEqual(ValidClass.room_reservation(ValidCardNum, ValidName, ValidID, ValidPhone, ValidRoom, ValidArrivalDate, ValidNumDays), ValidReservation.LOCALIZER)
+    @freeze_time("30/05/2024")
+    def testRoomReservation(self):
+        self.assertEqual(ValidClass.room_reservation(ValidCardNum, ValidName, ValidID, ValidPhone, ValidRoom, ValidArrivalDate, ValidNumDays), "c45cdbc85ababf7d4c215d77a767c94d")
+
+    @freeze_time("30/03/2024")
+    def testDateCheck(self):
+        self.assertTrue(ValidClass.departure_date_valid("30/03/2024"))
+
 
 
