@@ -28,15 +28,11 @@ class HotelStay():
             ",departure:" + str(self.__departure) + "}"
 
     @classmethod
-    def constructor2(cls, idcard, localizer, departure, roomtype, arrival):
-        __alg = "SHA-256"
-        __type = roomtype
-        __idcard = idcard
-        __localizer = localizer
-        justnow = datetime.utcnow()
-        __arrival = arrival
-        __departure = departure
-        return cls(idcard, localizer, 3, roomtype)
+    def from_departure(cls, idcard, localizer, departure, roomtype, arrival):
+        obj = cls(idcard, localizer, 0, roomtype)
+        obj.__arrival = arrival
+        obj.__departure = departure
+        return obj
 
     @property
     def idCard(self):

@@ -293,11 +293,14 @@ class HotelManager:
                 stay_data = json.load(file)
                 for entry in stay_data:
                     if "room_key" in entry and entry["room_key"] == room_key:
-                        alg = entry["alg"]
-                        typ = entry["typ"]
+                        #alg = entry["alg"]
+                        roomtype = entry["typ"]
                         localizer = entry["localizer"]
                         arrival = entry["arrival"]
                         departure = entry["departure"]
+                        idcard = entry["idCard"]
+                        #checks format and if it matches stay data
+                        self.validate_room_key(room_key, idcard, roomtype, localizer, arrival, departure)
                         self.departure_date_valid(departure)
                         self.add_checkout_to_json(room_key)
                         print("checkout was successfully validated")
@@ -308,15 +311,19 @@ class HotelManager:
             print("stays file does not exist")
             return False
 
-    def validate_room_key(self, room_key, alg, id, room, localizer, arrival, departure):
+    def validate_room_key(self, room_key, id, roomtype, localizer, arrival, departure):
         #function 3
         #syntatical analysis
         #returns true if room_key is in the correct format
-        stay = HotelStay.constructor2(id, localizer, departure, room)
+
+        #check format
+        if not isinstance(room_key, str) or len(room_key) != 64 or not room_key.isalnum() or not room_key.islower():
+            raise HotelManagementException("room key not valid format")
+        #Now we know key is valid format, so we check if it is in the stay json file
+        stay = HotelStay.from_departure(id, localizer, departure, roomtype, arrival)
         if stay.room_key == room_key:
             return True
-        else:
-            raise HotelManagementException("room key doesn't match stay information")
+        raise HotelManagementException("room key doesn't match stay information")
 
 
 
