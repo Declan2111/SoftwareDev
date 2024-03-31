@@ -27,13 +27,24 @@ class HotelStay():
             self.__localizer + ",arrival:" + str(self.__arrival) + \
             ",departure:" + str(self.__departure) + "}"
 
+    @classmethod
+    def constructor2(cls, idcard, localizer, departure, roomtype, arrival):
+        __alg = "SHA-256"
+        __type = roomtype
+        __idcard = idcard
+        __localizer = localizer
+        justnow = datetime.utcnow()
+        __arrival = arrival
+        __departure = departure
+        return cls(idcard, localizer, 3, roomtype)
+
     @property
     def idCard(self):
         """Property that represents the product_id of the patient"""
         return self.__idcard
 
     @idCard.setter
-    def icCard(self, value):
+    def idCard(self, value):
         self.__idcard = value
 
     @property

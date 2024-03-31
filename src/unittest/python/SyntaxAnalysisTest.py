@@ -1,110 +1,109 @@
 import unittest
-
+from freezegun import freeze_time
 from src.main.python.UC3MTravel.HotelManagementException import HotelManagementException
 from src.main.python.UC3MTravel.HotelManager import HotelManager
 
 ValidClass = HotelManager()
 
+
 class TestFunction2(unittest.TestCase):
-#Test valid file
-    #def testCase1(self):
-        #self.assertEqual(ValidClass.guest_arrival("JSONTests/TC1.json"), "ae1ca44a9aca5c20283add2000306b7e59c39ca37f36d1dac79fdc9682d17955")
 
-#Test delete node 1
+    # Test valid file
+    @freeze_time("30/05/2024")
+    def testCase1(self):
+        self.assertEqual(ValidClass.guest_arrival("JSONTests/TC1.json"),
+                         "fe6d6300551b5f6c861ac23ea051c2914f853709a144c42cfe4b0e3b28d9c09b")
+
+    # Test delete node 1
     def testCase2(self):
-
         with self.assertRaises(HotelManagementException) as context:
             ValidClass.guest_arrival("JSONTests/TC2.json")
 
         self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
 
-    #Test duplicate node 1
+    # Test duplicate node 1
     def testCase3(self):
         with self.assertRaises(HotelManagementException) as context:
             ValidClass.guest_arrival("JSONTests/TC3.json")
 
         self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
 
-#Test delete node 2
+    # Test delete node 2
     def testCase4(self):
         with self.assertRaises(HotelManagementException) as context:
             ValidClass.guest_arrival("JSONTests/TC4.json")
 
         self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
 
-    # Test delete node 2
-
-
-# Test duplicate node 2
+    # Test duplicate node 2
     def testCase5(self):
         with self.assertRaises(HotelManagementException) as context:
             ValidClass.guest_arrival("JSONTests/TC5.json")
 
         self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
 
-#Modifiy node 5
+    # Modifiy node 5
     def testCase6(self):
         with self.assertRaises(HotelManagementException) as context:
             ValidClass.guest_arrival("JSONTests/TC6.json")
 
         self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
 
-#delete node 3
+    # Delete node 3
     def testCase7(self):
         with self.assertRaises(HotelManagementException) as context:
             ValidClass.guest_arrival("JSONTests/TC7.json")
 
         self.assertEqual(str(context.exception), "JSON Decode Error - Invalid JSON Key")
 
-#Duplicate node 3
+    # Duplicate node 3
     def testCase8(self):
         with self.assertRaises(HotelManagementException) as context:
             ValidClass.guest_arrival("JSONTests/TC8.json")
 
         self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
 
-#Delete node 4
+    # Delete node 4
     def testCase9(self):
         with self.assertRaises(HotelManagementException) as context:
             ValidClass.guest_arrival("JSONTests/TC9.json")
 
         self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
 
-#duplicate node 4
+    # Duplicate node 4
     def testCase10(self):
         with self.assertRaises(HotelManagementException) as context:
             ValidClass.guest_arrival("JSONTests/TC10.json")
 
         self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
 
-#Modify node 9
+    # Modify node 9
     def testCase11(self):
         with self.assertRaises(HotelManagementException) as context:
             ValidClass.guest_arrival("JSONTests/TC11.json")
 
         self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
 
-#Delete node 6
+    # Delete node 6
     def testCase12(self):
         with self.assertRaises(HotelManagementException) as context:
             ValidClass.guest_arrival("JSONTests/TC12.json")
 
         self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
 
-#Duplicate node 6
+    # Duplicate node 6
     def testCase13(self):
         with self.assertRaises(HotelManagementException) as context:
             ValidClass.guest_arrival("JSONTests/TC13.json")
 
         self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
 
-#Delete Node 7
+    # Delete Node 7
     def testCase14(self):
         with self.assertRaises(HotelManagementException) as context:
             ValidClass.guest_arrival("JSONTests/TC14.json")
 
         self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
-
 
     # Duplicate node 7
     def testCase15(self):
@@ -119,7 +118,6 @@ class TestFunction2(unittest.TestCase):
             ValidClass.guest_arrival("JSONTests/TC16.json")
 
         self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
-
 
     # Node 8 deleted
     def testCase17(self):
@@ -154,7 +152,7 @@ class TestFunction2(unittest.TestCase):
         with self.assertRaises(HotelManagementException) as context:
             ValidClass.guest_arrival("JSONTests/TC21.json")
 
-        self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")    # Node 25 modified
+        self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")  # Node 25 modified
 
     # Node 11 deleted
     def testCase22(self):
@@ -245,7 +243,7 @@ class TestFunction2(unittest.TestCase):
         with self.assertRaises(HotelManagementException) as context:
             ValidClass.guest_arrival("JSONTests/TC34.json")
 
-        self.assertEqual(str(context.exception), "Localizer Error: Localizer not found in bookings file")
+        self.assertEqual(str(context.exception), "Error: Localizer or ID not found in bookings file")
 
     # Node 15 duplicated
     def testCase35(self):
@@ -254,13 +252,12 @@ class TestFunction2(unittest.TestCase):
 
         self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
 
-
     # Node 30 modified
     def testCase36(self):
         with self.assertRaises(HotelManagementException) as context:
             ValidClass.guest_arrival("JSONTests/TC36.json")
 
-        self.assertEqual(str(context.exception), "Localizer Error: Localizer not found in bookings file")
+        self.assertEqual(str(context.exception), "Error: Localizer or ID not found in bookings file")
 
     # Node 16 deleted
     def testCase37(self):
@@ -393,21 +390,21 @@ class TestFunction2(unittest.TestCase):
         with self.assertRaises(HotelManagementException) as context:
             ValidClass.guest_arrival("JSONTests/TC55.json")
 
-        self.assertEqual(str(context.exception), "Id_Card Error: Id not found in bookings file")
+        self.assertEqual(str(context.exception), "Error: Localizer or ID not found in bookings file")
 
     # Node 23 duplicated
     def testCase56(self):
         with self.assertRaises(HotelManagementException) as context:
             ValidClass.guest_arrival("JSONTests/TC56.json")
 
-        self.assertEqual(str(context.exception), "Id_Card Error: Id not found in bookings file")
+        self.assertEqual(str(context.exception), "Error: Localizer or ID not found in bookings file")
 
     # Node 37 modified
     def testCase57(self):
         with self.assertRaises(HotelManagementException) as context:
             ValidClass.guest_arrival("JSONTests/TC57.json")
 
-        self.assertEqual(str(context.exception), "Id_Card Error: Id not found in bookings file")
+        self.assertEqual(str(context.exception), "Error: Localizer or ID not found in bookings file")
 
     # Node 24 deleted
     def testCase58(self):
@@ -430,30 +427,9 @@ class TestFunction2(unittest.TestCase):
 
         self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    # Testing Manipulation
+    @freeze_time("30/05/2024")
+    def testManip1(self):
+        with self.assertRaises(HotelManagementException) as context:
+            ValidClass.guest_arrival("JSONTests/ManipulationTest1.json"),
+        self.assertEqual(str(context.exception), "Manipulation is present in reservation file")

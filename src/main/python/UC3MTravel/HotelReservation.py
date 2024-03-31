@@ -7,6 +7,8 @@ from freezegun import freeze_time
 # from stdnum import es
 from datetime import datetime
 
+
+
 # Move room_reservation and add_to_json to HotelManager, add excepetions to room_reservation function
 #Keep the rest of the methods and the tests in HotelReservation
 
@@ -105,6 +107,6 @@ class HotelReservation:
 # # Example usage:
 # reservation = HotelReservation("12345678Z", 4929319438123457, "Declan Lowney", 123456789, "single", 5)
 # reservation.add_booking_to_json()
-
-#manager = HotelManager()
-#manager.add_booking_to_json(4929319438123457, "Declan Lowney", "12345678Z", 123456789, "suite", "21-03-2024", 5)
+#
+# manager = HotelManager()
+# manager.add_booking_to_json(4929319438123457, "Declan Lowney", "12345678Z", 123456789, "suite", "21-03-2024", 5)

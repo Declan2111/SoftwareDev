@@ -1,6 +1,8 @@
 import json
 import os
 from datetime import datetime
+import datetime as dt
+
 import re
 
 from stdnum import es
@@ -189,19 +191,24 @@ class HotelManager:
                 for entry in bookings:
                     if 'localizer' in entry and entry['localizer'] == localizer:
                         if 'id_card' in entry and entry['id_card'] == id:
+                            credit_card = entry["credit_card"]
+                            name = entry["name_surname"]
+                            arrival = entry["arrival_date"]
+                            ID_Card = entry["id_card"]
                             num_days = entry["num_days"]
                             room_type = entry["room_type"]
-                            # self.check_manipulation() #this where we would check that the localizer matches the data in the bookings json
+                            phone_number = entry["phone_number"]
+                            localizer_num = entry["localizer"]
+                            self.check_manipulation(ID_Card, credit_card, name, phone_number, room_type, arrival, num_days, localizer_num)
                             if (self.checkCardNum(entry['credit_card']) and self.checkName(entry['name_surname']) and self.checkID(
                                     id) and self.checkPhone(entry['phone_number']) and self.checkRoom(
                                         room_type) and self.checkNumDays(num_days) and self.checkArrival(entry['arrival_date'])):
                                 stay = HotelStay(id, localizer, num_days, room_type)
                                 self.add_stay_to_json(stay, localizer)
                                 return stay.room_key
-                        else:
-                            raise HotelManagementException("Id_Card Error: Id not found in bookings file")
-                    else:
-                        raise HotelManagementException("Localizer Error: Localizer not found in bookings file")
+                raise HotelManagementException("Error: Localizer or ID not found in bookings file")
+
+
 
     #check to make sure input file follows valid json format and meets assignment requirements
     def validate_guest_file(self, guest_file):
@@ -217,12 +224,9 @@ class HotelManager:
             c = DATA["Localizer"]
             p = DATA["IdCard"]
             ValidCardNum = 4929319438123457
-            ValidID = "12345678Z"
             ValidName = "Ella Zaugg-James"
             ValidPhone = 123456789
-            ValidRoom = "single"
-            ValidNumDays = 5
-            ValidArrivalDate = "30/05/2024"
+
             req = HotelReservation(IDCARD=p, creditcardNumb=ValidCardNum, nAMeAndSURNAME=ValidName, phonenumber=ValidPhone,
                                    room_type="single", arrival="30/05/2024", numdays=3)
         except KeyError as e:
@@ -271,141 +275,18 @@ class HotelManager:
         else:
             print("No bookings file exists")
 
-
-    def check_manipulation1(self, name_surname, credit_card, num_days, room_type, phone_number, arrival_date, id_card, localizer):
+    def check_manipulation(self, id_card, credit_card, name_surname, phone_number, room_type, arrival_date, numdays, localizer):
         #function 2
-        #this method is dependent on if we can store the reservation objects in a dictionary. check __init__
-        # if so we update the date in that object and generate a localizer.
-        #since the object has already been instantiated, the datetime should be the same and thus if the data updated is the same then the localizer should be the same.
-        if self.reservations.__contains__(localizer):
-            reservation = self.reservations[localizer]
-        else:
-            return print("no localizer found in reservations dict")
-        if (self.checkCardNum(credit_card) and self.checkName(name_surname) and self.checkID(
-                id_card) and self.checkPhone(phone_number) and self.checkRoom(
-            room_type) and self.checkNumDays(num_days) and self.checkArrival(arrival_date)):
-            reservation.CREDITCARD(credit_card)
-            reservation.IDCARD(id_card)
-            reservation.room_type(room_type)
-            reservation.phone_number(phone_number)
-            reservation.arrival_date(arrival_date)
-            reservation.num_days(num_days)
-            reservation.name_surname(name_surname)
-            new_locator = reservation.LOCALIZER()
-            if localizer == new_locator:
-                print("no manipulation to data in reservation file (locator matches the information)")
-                return True
-            else:
-                print("appears to have manipulation in the file")
-                return False
-
-    def check_manipulation2(self, id_card, credit_card, name_surname, phone_number, room_type, arrival_date, localizer_freezed):
-        #function 2
-        #if we use this method then we would have to include localizer_freeze to bookings file. this method utilizes a new method in Reservation: LOCALIZER_FREEZED
-        #im thinking this is the best option since it doesn't depend on storing a reservation object dictionary.
-        reservation_test = HotelReservation(id_card, credit_card, name_surname, phone_number, room_type, arrival_date)
-        new_loc_freezed = reservation_test.LOCALIZER_FREEZED()
-        if new_loc_freezed == localizer_freezed:
+        reservation_test = HotelReservation(id_card, credit_card, name_surname, phone_number, room_type, arrival_date, numdays)
+        new_loc = reservation_test.LOCALIZER
+        if new_loc == localizer:
             print("no manipulation to data in reservation")
             return True
         else:
-            print("manipulation is present in reservation file")
-            return False
-
-    def check_manipulation3(self, localizer):
-        #function 2
-        #this method is dependent on if we can store the reservation objects in a dictionary; check __init__
-        #it compares weather the data in the reservation object matches the data in the JSON file.
-        if self.reservations.__contains__(localizer):
-            reservation = self.reservations[localizer]
-        else:
-            return print("no localizer found in reservations dict")
-        with open("bookings.json", "r") as bookings:
-            bookings = json.load(bookings)
-            for entry in bookings:
-                if 'localizer' in entry and entry['localizer'] == localizer:
-                    if entry['num_days'] == reservation.num_days():
-                        if entry['room_type'] == reservation.room_type():
-                            if entry['credit_card'] == reservation.CREDITCARD():
-                                if entry['phone_number'] == reservation.phone_number():
-                                    if entry['id_card'] == reservation.IDCARD():
-                                        if entry['name_surname'] == reservation.name_surname():
-                                            if entry['arrival_date'] == reservation.arrival_date():
-                                                return True
-                                            else:
-                                                return print("wrong arrival")
-                                        else:
-                                            return print("wrong name")
-                                    else:
-                                        return print("wrong id_card")
-                                else:
-                                    return print("wrong phone")
-                            else:
-                                return print("wrong credit")
-                        else:
-                            return print("wrong room_type")
-                    else:
-                        return print("wrong num_days")
-            else:
-                return print("localizer not in bookings")
-
-
-
-
-
-
-
-
-
-    def check_manipulation4(self, IDCARD, creditcardNumb, nAMeAndSURNAME, phonenumber, room_type, arrival, numdays, localizer):
-        #function 2
-        #same logic as #4 but without the freeze time so this won't work, but a good start if theres another idea on how to check manipulation
-        reservation = HotelReservation(IDCARD, creditcardNumb, nAMeAndSURNAME, phonenumber, room_type, arrival, numdays)
-        current_loc = reservation.LOCALIZER
-        if current_loc == localizer:
-            print("no manipulation")
-            return True
-        else:
-            print("manipulation or the localizer doesn't match")
-            return False
-
-    def add_stay_to_json(self, stay, localizer):
-        #function 2
-        cur_stay = {
-            "alg": stay.alg(),
-            "typ": stay.typ(),
-            "localizer": localizer,
-            "arrival": stay.arrival.isoformat(),
-            "departure": stay.departure.isoformat(),
-            "room_key": stay.room_key
-        }
-
-        if os.path.exists("stays.json"):
-            with open("stays.json", "r") as file:
-                stay_data = json.load(file)
-
-            # Check if id_card already exists in any entry
-            for entry in stay_data:
-                if 'localizer' in entry and entry['localizer'] == localizer:
-                    print("Stay with the same localizer already exists.")
-                    return
-
-        else:
-            stay_data = []
-
-        # Add the new booking data
-        stay_data.append(cur_stay)
-
-        # Write the updated bookings to the JSON file
-        with open("stays.json", "w") as file:
-            json.dump(stay_data, file, indent=4)
-
-        print("Stay successfully added.")
-
+            raise HotelManagementException("Manipulation is present in reservation file")
 
     def guest_checkout(self, room_key):
-        #function 3!
-
+        # function 3!
         self.validate_room_key(room_key)
         if os.path.exists("stays.json"):
             with open("stays.json", "r") as file:
@@ -427,20 +308,26 @@ class HotelManager:
             print("stays file does not exist")
             return False
 
-
-
-
-    def validate_room_key(self, room_key):
+    def validate_room_key(self, room_key, alg, id, room, localizer, arrival, departure):
         #function 3
         #syntatical analysis
         #returns true if room_key is in the correct format
+        stay = HotelStay.constructor2(id, localizer, departure, room)
+        if stay.room_key == room_key:
+            return True
+        else:
+            raise HotelManagementException("room key doesn't match stay information")
+
+
+
+
         return True
 
     def departure_date_valid(self, departure_date):
         #function 3
-        #returns true if the request to checkout is on the same day as there scheduled "departure date"
-        #use datetime to compare
-        return True
+        current_date = dt.date.today()
+        given_date = dt.datetime.strptime(departure_date, "%d/%m/%Y").date()
+        return given_date == current_date
 
     def add_checkout_to_json(self, room_key):
         #function 3
@@ -469,11 +356,88 @@ class HotelManager:
             json.dump(checkout_data, file, indent=4)
         print("checkout successfully added.")
 
+    def add_stay_to_json(self, stay, localizer):
+        #function 2
+        cur_stay = {
+            "alg": stay.alg(),
+            "typ": stay.typ(),
+            "localizer": localizer,
+            "idCard": stay.idCard,
+            "arrival": stay.arrival.isoformat(),
+            "departure": stay.departure.isoformat(),
+            "room_key": stay.room_key
+        }
+
+        if os.path.exists("stays.json"):
+            with open("stays.json", "r") as file:
+                stay_data = json.load(file)
+
+            # Check if id_card already exists in any entry
+            for entry in stay_data:
+                if 'localizer' in entry and entry['localizer'] == localizer:
+                    print("Stay with the same localizer already exists.")
+                    return
+
+        else:
+            stay_data = []
+
+        # Add the new booking data
+        stay_data.append(cur_stay)
+
+        # Write the updated bookings to the JSON file
+        with open("stays.json", "w") as file:
+            json.dump(stay_data, file, indent=4)
+
+        print("Stay successfully added.")
 
 
 
 
 
+
+
+    # def check_manipulation1(self, name_surname, credit_card, num_days, room_type, phone_number, arrival_date, id_card, localizer):
+    #     #function 2
+    #     #this method is dependent on if we can store the reservation objects in a dictionary. check __init__
+    #     # if so we update the date in that object and generate a localizer.
+    #     #since the object has already been instantiated, the datetime should be the same and thus if the data updated is the same then the localizer should be the same.
+    #     if self.reservations.__contains__(localizer):
+    #         reservation = self.reservations[localizer]
+    #     else:
+    #         return print("no localizer found in reservations dict")
+    #     if (self.checkCardNum(credit_card) and self.checkName(name_surname) and self.checkID(
+    #             id_card) and self.checkPhone(phone_number) and self.checkRoom(
+    #         room_type) and self.checkNumDays(num_days) and self.checkArrival(arrival_date)):
+    #         reservation.CREDITCARD(credit_card)
+    #         reservation.IDCARD(id_card)
+    #         reservation.room_type(room_type)
+    #         reservation.phone_number(phone_number)
+    #         reservation.arrival_date(arrival_date)
+    #         reservation.num_days(num_days)
+    #         reservation.name_surname(name_surname)
+    #         new_locator = reservation.LOCALIZER()
+    #         if localizer == new_locator:
+    #             print("no manipulation to data in reservation file (locator matches the information)")
+    #             return True
+    #         else:
+    #             print("appears to have manipulation in the file")
+    #             return False
+
+
+
+    #
+    # def check_manipulation4(self, IDCARD, creditcardNumb, nAMeAndSURNAME, phonenumber, room_type, arrival, numdays, localizer):
+    #     #function 2
+    #     #same logic as #4 but without the freeze time so this won't work, but a good start if theres another idea on how to check manipulation
+    #     reservation = HotelReservation(IDCARD, creditcardNumb, nAMeAndSURNAME, phonenumber, room_type, arrival, numdays)
+    #     current_loc = reservation.LOCALIZER
+    #     if current_loc == localizer:
+    #         print("no manipulation")
+    #         return True
+    #     else:
+    #         print("manipulation or the localizer doesn't match")
+    #         return False
+    #
 
 
 
@@ -484,3 +448,4 @@ class HotelManager:
 
 #manager = HotelManager()
 #manager.add_booking_to_json(4929319438123457, "Declan Lowney", "12345678Z", 123456789, "suite", "21-03-2024", 5)
+
