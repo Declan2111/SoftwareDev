@@ -1,11 +1,14 @@
-
-Running tests...
-----------------------------------------------------------------------
-EE
-======================================================================
-ERROR [0.001s]: test_function2_tests (unittest.loader._FailedTest)
-----------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="unittest.loader._FailedTest-20240401221622" tests="2" file="unittest/loader.py" time="0.002" timestamp="2024-04-01T22:16:22" failures="0" errors="2" skipped="0">
+	<testcase classname="unittest.loader._FailedTest" name="test_function2_tests" time="0.001" timestamp="2024-04-01T22:16:22">
+		<error type="ImportError" message="Failed to import test module: test_function2_tests
 Traceback (most recent call last):
+  File &quot;/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/loader.py&quot;, line 154, in loadTestsFromName
+    module = __import__(module_name)
+  File &quot;/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py&quot;, line 5, in &lt;module&gt;
+    from src.main.python.UC3MTravel.hotel_management_exception import HotelManagementException
+ModuleNotFoundError: No module named 'src'
+"><![CDATA[Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
     yield
   File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
@@ -22,11 +25,17 @@ Traceback (most recent call last):
     from src.main.python.UC3MTravel.hotel_management_exception import HotelManagementException
 ModuleNotFoundError: No module named 'src'
 
-
-======================================================================
-ERROR [0.000s]: test_hotel_reservation_tests (unittest.loader._FailedTest)
-----------------------------------------------------------------------
+]]></error>
+	</testcase>
+	<testcase classname="unittest.loader._FailedTest" name="test_hotel_reservation_tests" time="0.000" timestamp="2024-04-01T22:16:22">
+		<error type="ImportError" message="Failed to import test module: test_hotel_reservation_tests
 Traceback (most recent call last):
+  File &quot;/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/loader.py&quot;, line 154, in loadTestsFromName
+    module = __import__(module_name)
+  File &quot;/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_hotel_reservation_tests.py&quot;, line 5, in &lt;module&gt;
+    from src.main.python.UC3MTravel.hotel_management_exception import HotelManagementException
+ModuleNotFoundError: No module named 'src'
+"><![CDATA[Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
     yield
   File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
@@ -43,10 +52,6 @@ Traceback (most recent call last):
     from src.main.python.UC3MTravel.hotel_management_exception import HotelManagementException
 ModuleNotFoundError: No module named 'src'
 
-
-----------------------------------------------------------------------
-Ran 2 tests in 0.010s
-
-FAILED (errors=2)
-
-Generating XML reports...
+]]></error>
+	</testcase>
+</testsuite>

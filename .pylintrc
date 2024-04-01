@@ -122,6 +122,8 @@ argument-naming-style=camelCase
 #argument-rgx=
 
 # Naming style matching correct attribute names.
+# Modified Rule: Attribute names should follow camelCase naming convention.
+# Original: attr-naming-style=snake_case
 attr-naming-style=camelCase
 
 # Regular expression matching correct attribute names. Overrides attr-naming-
@@ -130,6 +132,10 @@ attr-naming-style=camelCase
 #attr-rgx=
 
 # Bad variable names which should always be refused, separated by a comma.
+# Modified Rule: Additional bad variable names which should always be refused, separated by a comma.
+# bad-names=foo, bar, baz, toto, tutu, tata,  abc, var, xyz
+# Original Rule: Bad variable names which should always be refused, separated by a comma.
+# bad-names=foo, bar, baz, toto, tutu, tata
 bad-names=foo,
           bar,
           baz,
@@ -161,6 +167,8 @@ class-const-naming-style=camelCase
 #class-const-rgx=
 
 # Naming style matching correct class names.
+# Modified Rule Class names should use the PascalCase convention.
+# Original: class-naming-style=UPPERCASE
 class-naming-style=PascalCase
 
 # Regular expression matching correct class names. Overrides class-naming-
@@ -246,6 +254,8 @@ property-classes=abc.abstractproperty
 #typevar-rgx=
 
 # Naming style matching correct variable names.
+# Modified Rule: Variables follow camelCase naming convention
+# Original: variable-naming-style=snake_case
 variable-naming-style=camelCase
 
 # Regular expression matching correct variable names. Overrides variable-
@@ -288,25 +298,41 @@ exclude-too-few-public-methods=
 ignored-parents=
 
 # Maximum number of arguments for function / method.
-max-args=8
+# Modified Rule: Maximum number of arguments for a function / method is 10.
+# Original : max-args=5
+max-args=10
 
 # Maximum number of attributes for a class (see R0902).
+
+#Modified Rule: Maximum number of attributes for a class is 10.
+#Original Rule: Maximum number of attributes for a class is 7.
+
 max-attributes=10
 
 # Maximum number of boolean expressions in an if statement (see R0916).
+# Modified Rule: Maximum number of boolean expressions in an if statement is 7
+# Original: max-bool-expr=5
 max-bool-expr=7
 
 # Maximum number of branch for function / method body.
 max-branches=12
 
 # Maximum number of locals for function / method body.
-max-locals=15
+
+# Modified Rule: Maximum number of locals in a module is 25
+# Original Rule: Maximum number of locals in a module is 15
+
+
+max-locals=25
 
 # Maximum number of parents for a class (see R0901).
 max-parents=7
 
 # Maximum number of public methods for a class (see R0904).
-max-public-methods=20
+
+#Modified Rule: Maximum number of public methods is 100
+#Original Rule: Maximum number of public methods is 20
+max-public-methods=100
 
 # Maximum number of return / yield for function / method body.
 max-returns=6
@@ -340,9 +366,15 @@ indent-after-paren=4
 indent-string='    '
 
 # Maximum number of characters on a single line.
-max-line-length=80
+# Modified Limit all lines to a maximum of 110 characters
+# Original: max-line-length=100
+max-line-length=110
 
 # Maximum number of lines in a module.
+
+#Modified Rule: Maximum number of lines in a module is 500
+#Original Rule: Maximum number of lines in a module is 1000
+
 max-module-lines=500
 
 # Allow the body of a class to be on the same line as the declaration if body
@@ -518,6 +550,8 @@ ignore-imports=yes
 ignore-signatures=yes
 
 # Minimum lines number of a similarity.
+# Modified Rule: Minimum lines of a similarity is 5.
+# Original: min-similarity-lines=4
 min-similarity-lines=5
 
 

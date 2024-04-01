@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="67d6214f-fec5-4b1b-90cb-13c98d23630d" name="Changes" comment="Created Function 1 and corresponding tests">
+      <change afterPath="$PROJECT_DIR$/src/main/python/UC3MTravel/hotel_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/python/UC3MTravel/hotel_reservation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/python/UC3MTravel/hotel_stay.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pylintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.pylintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/UC3MTravel/HotelManagementException.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/UC3MTravel/hotel_management_exception.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/UC3MTravel/HotelManager.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/UC3MTravel/HotelReservation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/UC3MTravel/HotelStay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/unittest/python/SyntaxAnalysisTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/unittest/python/test_function2_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/unittest/python/test_hotel_reservation_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/unittest/python/test_hotel_reservation_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/G88.2024.T06.EG2.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/target/G88.2024.T06.EG2.coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/G88.2024.T06.EG2-1.0.dev0/UC3MTravel/HotelManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/target/dist/G88.2024.T06.EG2-1.0.dev0/UC3MTravel/HotelManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/G88.2024.T06.EG2-1.0.dev0/UC3MTravel/HotelReservation.py" beforeDir="false" afterPath="$PROJECT_DIR$/target/dist/G88.2024.T06.EG2-1.0.dev0/UC3MTravel/HotelReservation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/G88.2024.T06.EG2-1.0.dev0/UC3MTravel/HotelStay.py" beforeDir="false" afterPath="$PROJECT_DIR$/target/dist/G88.2024.T06.EG2-1.0.dev0/UC3MTravel/HotelStay.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/G88.2024.T06.EG2-1.0.dev0/UC3MTravel/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/target/dist/G88.2024.T06.EG2-1.0.dev0/UC3MTravel/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/pybuilder.plugins.python.unittest_plugin.run_unit_tests.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/target/pybuilder.plugins.python.unittest_plugin.run_unit_tests.coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/reports/G88.2024.T06.EG2_coverage" beforeDir="false" afterPath="$PROJECT_DIR$/target/reports/G88.2024.T06.EG2_coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/reports/G88.2024.T06.EG2_coverage.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/reports/G88.2024.T06.EG2_coverage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/reports/G88.2024.T06.EG2_coverage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/reports/G88.2024.T06.EG2_coverage.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/reports/pybuilder.plugins.python.unittest_plugin.run_unit_tests_coverage" beforeDir="false" afterPath="$PROJECT_DIR$/target/reports/pybuilder.plugins.python.unittest_plugin.run_unit_tests_coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/reports/pybuilder.plugins.python.unittest_plugin.run_unit_tests_coverage.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/reports/pybuilder.plugins.python.unittest_plugin.run_unit_tests_coverage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/reports/pybuilder.plugins.python.unittest_plugin.run_unit_tests_coverage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/reports/pybuilder.plugins.python.unittest_plugin.run_unit_tests_coverage.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/reports/unittest" beforeDir="false" afterPath="$PROJECT_DIR$/target/reports/unittest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/reports/unittest.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/reports/unittest.json" afterDir="false" />
+    </list>
+    <list id="02e24543-f5d6-46f1-81d0-5096d0d84404" name="Changes by a19787" comment="">
+      <change beforePath="$PROJECT_DIR$/.pylintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.pylintrc" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.pylintrc">
+      <ranges>
+        <range start1="124" end1="124" start2="124" end2="126" changelist="67d6214f-fec5-4b1b-90cb-13c98d23630d" />
+        <range start1="132" end1="132" start2="134" end2="138" changelist="67d6214f-fec5-4b1b-90cb-13c98d23630d" />
+        <range start1="163" end1="163" start2="169" end2="171" changelist="67d6214f-fec5-4b1b-90cb-13c98d23630d" />
+        <range start1="248" end1="248" start2="256" end2="258" changelist="67d6214f-fec5-4b1b-90cb-13c98d23630d" />
+        <range start1="290" end1="291" start2="300" end2="303" changelist="67d6214f-fec5-4b1b-90cb-13c98d23630d" />
+        <range start1="293" end1="293" start2="305" end2="309" changelist="02e24543-f5d6-46f1-81d0-5096d0d84404" />
+        <range start1="302" end1="303" start2="318" end2="324" changelist="67d6214f-fec5-4b1b-90cb-13c98d23630d" />
+        <range start1="308" end1="309" start2="329" end2="333" changelist="67d6214f-fec5-4b1b-90cb-13c98d23630d" />
+        <range start1="342" end1="343" start2="366" end2="369" changelist="67d6214f-fec5-4b1b-90cb-13c98d23630d" />
+        <range start1="345" end1="345" start2="371" end2="375" changelist="02e24543-f5d6-46f1-81d0-5096d0d84404" />
+        <range start1="520" end1="520" start2="550" end2="552" changelist="67d6214f-fec5-4b1b-90cb-13c98d23630d" />
+      </ranges>
+    </file>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2ds8v8Oa8NddFbBruPZoFt3CWre" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Python tests for src.unittest.python.test_function2_tests.TestFunction2" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="G88.2024.T06.EG2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/unittest/python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;src.unittest.python.test_function2_tests.TestFunction2&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for src.unittest.python.test_function2_tests.TestFunction2.test_case1" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="G88.2024.T06.EG2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/unittest/python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;src.unittest.python.test_function2_tests.TestFunction2.test_case1&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for src.unittest.python.test_function2_tests.TestFunction2.test_case15" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="G88.2024.T06.EG2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/unittest/python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;src.unittest.python.test_function2_tests.TestFunction2.test_case15&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for src.unittest.python.test_hotel_reservation_tests.TestHotelReservation" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="G88.2024.T06.EG2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/unittest/python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;src.unittest.python.test_hotel_reservation_tests.TestHotelReservation&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for src.unittest.python.test_hotel_reservation_tests.TestHotelReservation.test_room_reservation" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="G88.2024.T06.EG2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/unittest/python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;src.unittest.python.test_hotel_reservation_tests.TestHotelReservation.test_room_reservation&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for src.unittest.python.test_hotel_reservation_tests.TestHotelReservation" />
+        <item itemvalue="Python tests.Python tests for src.unittest.python.test_function2_tests.TestFunction2" />
+        <item itemvalue="Python tests.Python tests for src.unittest.python.test_hotel_reservation_tests.TestHotelReservation.test_room_reservation" />
+        <item itemvalue="Python tests.Python tests for src.unittest.python.test_function2_tests.TestFunction2.test_case15" />
+        <item itemvalue="Python tests.Python tests for src.unittest.python.test_function2_tests.TestFunction2.test_case1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="67d6214f-fec5-4b1b-90cb-13c98d23630d" name="Changes" comment="" />
+      <created>1710785652162</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710785652162</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created Function 1 and corresponding tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Function 1 and corresponding tests" />
+  </component>
+</project>
