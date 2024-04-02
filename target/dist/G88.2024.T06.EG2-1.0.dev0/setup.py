@@ -44,7 +44,7 @@ if __name__ == '__main__':
         scripts = [],
         packages = [
             '.',
-            'UC3MTravel'
+            'uc3m_travel'
         ],
         namespace_packages = [],
         py_modules = [],

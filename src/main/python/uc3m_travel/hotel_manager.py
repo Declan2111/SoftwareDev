@@ -6,9 +6,9 @@ from datetime import datetime
 import datetime as dt
 import re
 from stdnum import es
-from src.main.python.UC3MTravel.hotel_management_exception import HotelManagementException
-from src.main.python.UC3MTravel.hotel_reservation import HotelReservation
-from src.main.python.UC3MTravel.hotel_stay import HotelStay
+from .hotel_management_exception import HotelManagementException
+from .hotel_reservation import HotelReservation
+from .hotel_stay import HotelStay
 
 
 class HotelManager:

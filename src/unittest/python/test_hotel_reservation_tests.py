@@ -2,9 +2,9 @@
 import unittest
 from datetime import datetime
 from freezegun import freeze_time
-from src.main.python.UC3MTravel.hotel_management_exception import HotelManagementException
-from src.main.python.UC3MTravel.hotel_manager import HotelManager
-from src.main.python.UC3MTravel.hotel_reservation import HotelReservation
+from uc3m_travel import HotelManagementException
+from uc3m_travel import HotelManager
+from uc3m_travel import HotelReservation
 
 VALID_CARD_NUM = 4929319438123457
 VALID_ID = "12345678Z"
@@ -372,3 +372,7 @@ class TestHotelReservation(unittest.TestCase):
                                                      VALID_PHONE, VALID_ROOM,
                                                      VALID_ARRIVAL_DATE, VALID_NUM_DAYS),
                          "c45cdbc85ababf7d4c215d77a767c94d")
+
+    def testThing(self):
+        self.assertTrue(ValidClass.room_reservation(4929319438123457, "Delcan Lowney", "01234567L",
+                                                        123456789, "double", "29/07/2024", 6))

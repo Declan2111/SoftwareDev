@@ -1,10 +1,10 @@
-Name                                     Stmts   Miss  Cover
-------------------------------------------------------------
-UC3MTravel/HotelManagementException.py      10     10     0%
-UC3MTravel/__init__.py                       0      0   100%
-UC3MTravel/hotelManager.py                 216    216     0%
-UC3MTravel/hotelReservation.py              61     61     0%
-UC3MTravel/hotelStay.py                     49     49     0%
-__init__.py                                  0      0   100%
-------------------------------------------------------------
-TOTAL                                      336    336     0%
+Name                                        Stmts   Miss Branch BrPart  Cover
+-----------------------------------------------------------------------------
+__init__.py                                     0      0      0      0   100%
+uc3m_travel/__init__.py                         4      0      0      0   100%
+uc3m_travel/hotel_management_exception.py      10      1      0      0    90%
+uc3m_travel/hotel_manager.py                  216     70    100     11    64%
+uc3m_travel/hotel_reservation.py               61     14      0      0    77%
+uc3m_travel/hotel_stay.py                      49      8      0      0    84%
+-----------------------------------------------------------------------------
+TOTAL                                         340     93    100     11    69%

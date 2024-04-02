@@ -1,0 +1,11 @@
+[
+    {
+        "alg": "SHA-256",
+        "typ": "single",
+        "localizer": "c45cdbc85ababf7d4c215d77a767c94d",
+        "idCard": "12345678Z",
+        "arrival": "2024-05-30T00:00:00",
+        "departure": "2024-06-04T00:00:00",
+        "room_key": "fe6d6300551b5f6c861ac23ea051c2914f853709a144c42cfe4b0e3b28d9c09b"
+    }
+]

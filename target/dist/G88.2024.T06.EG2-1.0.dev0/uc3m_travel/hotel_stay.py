@@ -1,4 +1,4 @@
-''' Class HotelStay (GE2.2) '''
+""" Class HotelStay (GE2.2) """
 
 from datetime import datetime, timedelta
 import hashlib
@@ -14,7 +14,7 @@ class HotelStay:
         self.loc = localizer
         justnow = datetime.utcnow()
         self.arrivalDate = justnow
-        # timestamp is represented in seconds.miliseconds
+        # timestamp is represented in seconds.milliseconds
         # to add the number of days we must express numdays in seconds
         numSeconds = numdays * 24 * 60 * 60
 

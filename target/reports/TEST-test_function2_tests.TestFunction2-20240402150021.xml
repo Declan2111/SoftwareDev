@@ -1,0 +1,1532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_function2_tests.TestFunction2-20240402150021" tests="62" file="test_function2_tests.py" time="0.060" timestamp="2024-04-02T15:00:22" failures="60" errors="1" skipped="0">
+	<testcase classname="test_function2_tests.TestFunction2" name="test_date_check" time="0.003" timestamp="2024-04-02T15:00:22"/>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case10" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 81, in test_case10
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case11" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 88, in test_case11
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case12" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 95, in test_case12
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case13" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 102, in test_case13
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case14" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 109, in test_case14
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case15" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 116, in test_case15
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case16" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 123, in test_case16
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case17" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 130, in test_case17
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case18" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 137, in test_case18
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case19" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 144, in test_case19
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case2" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 25, in test_case2
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case20" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 151, in test_case20
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case21" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 158, in test_case21
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")  # Node 25 modified
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case22" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Invalid JSON Key'
+- Wrong file or file path
++ JSON Decode Error - Invalid JSON Key
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 165, in test_case22
+    self.assertEqual(str(context.exception), "JSON Decode Error - Invalid JSON Key")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Invalid JSON Key'
+- Wrong file or file path
++ JSON Decode Error - Invalid JSON Key
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case23" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Invalid JSON Key'
+- Wrong file or file path
++ JSON Decode Error - Invalid JSON Key
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 172, in test_case23
+    self.assertEqual(str(context.exception), "JSON Decode Error - Invalid JSON Key")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Invalid JSON Key'
+- Wrong file or file path
++ JSON Decode Error - Invalid JSON Key
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case24" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Invalid JSON Key'
+- Wrong file or file path
++ JSON Decode Error - Invalid JSON Key
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 179, in test_case24
+    self.assertEqual(str(context.exception), "JSON Decode Error - Invalid JSON Key")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Invalid JSON Key'
+- Wrong file or file path
++ JSON Decode Error - Invalid JSON Key
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case25" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 186, in test_case25
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case26" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 193, in test_case26
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case27" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 200, in test_case27
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case28" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 207, in test_case28
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case29" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 214, in test_case29
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case3" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 32, in test_case3
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case30" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 221, in test_case30
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case31" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 228, in test_case31
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case32" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 235, in test_case32
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case33" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 242, in test_case33
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case34" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'Error: Localizer or ID not found in bookings file'
+- Wrong file or file path
++ Error: Localizer or ID not found in bookings file
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 249, in test_case34
+    self.assertEqual(str(context.exception), "Error: Localizer or ID not found in bookings file")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'Error: Localizer or ID not found in bookings file'
+- Wrong file or file path
++ Error: Localizer or ID not found in bookings file
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case35" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 256, in test_case35
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case36" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'Error: Localizer or ID not found in bookings file'
+- Wrong file or file path
++ Error: Localizer or ID not found in bookings file
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 263, in test_case36
+    self.assertEqual(str(context.exception), "Error: Localizer or ID not found in bookings file")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'Error: Localizer or ID not found in bookings file'
+- Wrong file or file path
++ Error: Localizer or ID not found in bookings file
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case37" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 270, in test_case37
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case38" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 277, in test_case38
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case39" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 284, in test_case39
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case4" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 39, in test_case4
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case40" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 291, in test_case40
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case41" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 298, in test_case41
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case42" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 305, in test_case42
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case43" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Invalid JSON Key'
+- Wrong file or file path
++ JSON Decode Error - Invalid JSON Key
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 312, in test_case43
+    self.assertEqual(str(context.exception), "JSON Decode Error - Invalid JSON Key")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Invalid JSON Key'
+- Wrong file or file path
++ JSON Decode Error - Invalid JSON Key
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case44" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Invalid JSON Key'
+- Wrong file or file path
++ JSON Decode Error - Invalid JSON Key
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 319, in test_case44
+    self.assertEqual(str(context.exception), "JSON Decode Error - Invalid JSON Key")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Invalid JSON Key'
+- Wrong file or file path
++ JSON Decode Error - Invalid JSON Key
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case45" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Invalid JSON Key'
+- Wrong file or file path
++ JSON Decode Error - Invalid JSON Key
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 326, in test_case45
+    self.assertEqual(str(context.exception), "JSON Decode Error - Invalid JSON Key")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Invalid JSON Key'
+- Wrong file or file path
++ JSON Decode Error - Invalid JSON Key
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case46" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 333, in test_case46
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case47" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 340, in test_case47
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case48" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 347, in test_case48
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case49" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 354, in test_case49
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case5" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 46, in test_case5
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case50" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 361, in test_case50
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case51" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 368, in test_case51
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case52" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 375, in test_case52
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case53" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 382, in test_case53
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case54" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 389, in test_case54
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case55" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'Error: Localizer or ID not found in bookings file'
+- Wrong file or file path
++ Error: Localizer or ID not found in bookings file
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 396, in test_case55
+    self.assertEqual(str(context.exception), "Error: Localizer or ID not found in bookings file")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'Error: Localizer or ID not found in bookings file'
+- Wrong file or file path
++ Error: Localizer or ID not found in bookings file
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case56" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'Error: Localizer or ID not found in bookings file'
+- Wrong file or file path
++ Error: Localizer or ID not found in bookings file
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 403, in test_case56
+    self.assertEqual(str(context.exception), "Error: Localizer or ID not found in bookings file")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'Error: Localizer or ID not found in bookings file'
+- Wrong file or file path
++ Error: Localizer or ID not found in bookings file
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case57" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'Error: Localizer or ID not found in bookings file'
+- Wrong file or file path
++ Error: Localizer or ID not found in bookings file
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 410, in test_case57
+    self.assertEqual(str(context.exception), "Error: Localizer or ID not found in bookings file")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'Error: Localizer or ID not found in bookings file'
+- Wrong file or file path
++ Error: Localizer or ID not found in bookings file
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case58" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 417, in test_case58
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case59" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 424, in test_case59
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case6" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 53, in test_case6
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case60" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 431, in test_case60
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case7" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Invalid JSON Key'
+- Wrong file or file path
++ JSON Decode Error - Invalid JSON Key
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 60, in test_case7
+    self.assertEqual(str(context.exception), "JSON Decode Error - Invalid JSON Key")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Invalid JSON Key'
+- Wrong file or file path
++ JSON Decode Error - Invalid JSON Key
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case8" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 67, in test_case8
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case9" time="0.001" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 74, in test_case9
+    self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'JSON Decode Error - Wrong JSON Format'
+- Wrong file or file path
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_manip1" time="0.002" timestamp="2024-04-02T15:00:22">
+		<failure type="AssertionError" message="'Wrong file or file path' != 'Manipulation is present in reservation file'
+- Wrong file or file path
++ Manipulation is present in reservation file
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/venv/lib/python3.10/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 438, in test_manip1
+    self.assertEqual(str(context.exception), "Manipulation is present in reservation file")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Wrong file or file path' != 'Manipulation is present in reservation file'
+- Wrong file or file path
++ Manipulation is present in reservation file
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_function2_tests.TestFunction2" name="test_case1" time="0.015" timestamp="2024-04-02T15:00:22">
+		<error type="HotelManagementException" message="Wrong file or file path"><![CDATA[Traceback (most recent call last):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/main/python/uc3m_travel/hotel_manager.py", line 206, in validate_guest_file
+    with open(guestFile, encoding="utf-8") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'JSONTests/TC1.json'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/venv/lib/python3.10/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 17, in test_case1
+    self.assertEqual(ValidClass.guest_arrival("JSONTests/TC1.json"),
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/main/python/uc3m_travel/hotel_manager.py", line 157, in guest_arrival
+    self.validate_guest_file(guestFile)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/main/python/uc3m_travel/hotel_manager.py", line 209, in validate_guest_file
+    raise HotelManagementException("Wrong file or file path") from e
+uc3m_travel.hotel_management_exception.HotelManagementException: Wrong file or file path
+]]></error>
+	</testcase>
+</testsuite>

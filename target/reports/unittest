@@ -1,9 +1,10 @@
 
 Running tests...
 ----------------------------------------------------------------------
-EE
+.............................................................F................................................
 ======================================================================
-ERROR [0.001s]: test_function2_tests (unittest.loader._FailedTest)
+FAIL [0.004s]: test_manip1 (test_function2_tests.TestFunction2)
+Testing Manipulation
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
@@ -12,41 +13,24 @@ Traceback (most recent call last):
     self._callTestMethod(testMethod)
   File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
     method()
-  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/loader.py", line 34, in testFailure
-    raise self._exception
-ImportError: Failed to import test module: test_function2_tests
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/loader.py", line 154, in loadTestsFromName
-    module = __import__(module_name)
-  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 5, in <module>
-    from src.main.python.UC3MTravel.hotel_management_exception import HotelManagementException
-ModuleNotFoundError: No module named 'src'
-
-
-======================================================================
-ERROR [0.000s]: test_hotel_reservation_tests (unittest.loader._FailedTest)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
-    yield
-  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
-    self._callTestMethod(testMethod)
-  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
-    method()
-  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/loader.py", line 34, in testFailure
-    raise self._exception
-ImportError: Failed to import test module: test_hotel_reservation_tests
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/loader.py", line 154, in loadTestsFromName
-    module = __import__(module_name)
-  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_hotel_reservation_tests.py", line 5, in <module>
-    from src.main.python.UC3MTravel.hotel_management_exception import HotelManagementException
-ModuleNotFoundError: No module named 'src'
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/venv/lib/python3.10/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 438, in test_manip1
+    self.assertEqual(str(context.exception), "Manipulation is present in reservation file")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Error: Localizer or ID not found in bookings file' != 'Manipulation is present in reservation file'
+- Error: Localizer or ID not found in bookings file
++ Manipulation is present in reservation file
 
 
 ----------------------------------------------------------------------
-Ran 2 tests in 0.010s
+Ran 110 tests in 0.344s
 
-FAILED (errors=2)
+FAILED (failures=1)
 
 Generating XML reports...

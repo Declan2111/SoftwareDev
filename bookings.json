@@ -16,7 +16,7 @@
         "phone_number": 123456789,
         "arrival_date": "29/07/2024",
         "num_days": 6,
-        "room_type": "single",
+        "room_type": "double",
         "localizer": "69d1e39d96ac983e8fa7359c0f7a6bda"
     }
 ]
