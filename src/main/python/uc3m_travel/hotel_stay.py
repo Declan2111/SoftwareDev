@@ -33,7 +33,7 @@ class HotelStay:
     @classmethod
     def from_departure(cls, idcard, localizer, departure, roomType, arrival):
         """Alternate constructor for HotelStay using information in the stay json file"""
-        obj = cls(idcard, localizer, 0, roomType)
+        obj = cls(idcard, localizer, 3, roomType)
         obj.arrivalDate = arrival
         obj.departDate = departure
         return obj

@@ -269,16 +269,19 @@ class HotelManager:
                 or not roomKey.isalnum() or not roomKey.islower():
             raise HotelManagementException("room key not valid format")
         # Now we know key is valid format, so we check if it is in the stay json file
-        stay = HotelStay.from_departure(iD, localizer, departure, roomtype, arrival)
-        if stay.roomKey == roomKey:
-            return True
-        raise HotelManagementException("room key doesn't match stay information")
+        # stay = HotelStay.from_departure(iD, localizer, departure, roomtype, arrival)
+        # if stay.roomKey == roomKey:
+        #     return True
+        # raise HotelManagementException("room key doesn't match stay information")
 
     def departure_date_valid(self, departureDate):
         """Checks that the departure date the guest is leaving is the same as the current date"""
         # function 3
         currentDate = dt.date.today()
-        givenDate = dt.datetime.strptime(departureDate, "%d/%m/%Y").date()
+        dt_object = datetime.strptime(departureDate, '%Y-%m-%dT%H:%M:%S')
+
+        # Format the datetime object into the desired format
+        givenDate = dt_object.strftime('%d/%m/%Y')
         return givenDate == currentDate
 
     def add_checkout_to_json(self, roomKey):
