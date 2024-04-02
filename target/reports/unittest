@@ -1,36 +1,10 @@
 
 Running tests...
 ----------------------------------------------------------------------
-.............................................................F................................................
-======================================================================
-FAIL [0.004s]: test_manip1 (test_function2_tests.TestFunction2)
-Testing Manipulation
+.............................................................................................................
 ----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
-    yield
-  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
-    self._callTestMethod(testMethod)
-  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
-    method()
-  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/venv/lib/python3.10/site-packages/freezegun/api.py", line 827, in wrapper
-    result = func(*args, **kwargs)
-  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG2/src/unittest/python/test_function2_tests.py", line 438, in test_manip1
-    self.assertEqual(str(context.exception), "Manipulation is present in reservation file")
-  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
-    assertion_func(first, second, msg=msg)
-  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
-    self.fail(self._formatMessage(msg, standardMsg))
-  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
-    raise self.failureException(msg)
-AssertionError: 'Error: Localizer or ID not found in bookings file' != 'Manipulation is present in reservation file'
-- Error: Localizer or ID not found in bookings file
-+ Manipulation is present in reservation file
+Ran 109 tests in 1.053s
 
-
-----------------------------------------------------------------------
-Ran 110 tests in 0.344s
-
-FAILED (failures=1)
+OK
 
 Generating XML reports...

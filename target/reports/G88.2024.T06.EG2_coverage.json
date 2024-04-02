@@ -52,9 +52,9 @@
       "sum_lines_not_covered": 0
     },
     {
-      "branches": 100,
-      "branches_missing": 43,
-      "branches_partial": 11,
+      "branches": 78,
+      "branches_missing": 30,
+      "branches_partial": 10,
       "coverage": 67.5925925925926,
       "lines": [
         3,
@@ -509,7 +509,7 @@
       "sum_lines_not_covered": 14
     }
   ],
-  "overall_branch_coverage": 57.0,
-  "overall_branch_partial_coverage": 89.0,
+  "overall_branch_coverage": 61.53846153846154,
+  "overall_branch_partial_coverage": 87.17948717948718,
   "overall_coverage": 72.6470588235294
 }
