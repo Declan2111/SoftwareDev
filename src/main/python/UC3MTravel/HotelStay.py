@@ -20,6 +20,7 @@ class HotelStay():
 
         # Add the timedelta to self.__arrival to get the departure time
         self.__departure = self.__arrival + delta
+        self.__room_key = self.room_key
 
     def __signature_string(self):
         """Composes the string to be used for generating the key for the room"""
