@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_function3_tests.TestFunction3-20240402234914" tests="11" file="test_function3_tests.py" time="0.050" timestamp="2024-04-02T23:49:15" failures="0" errors="0" skipped="0">
+	<testcase classname="test_function3_tests.TestFunction3" name="test_case1" time="0.004" timestamp="2024-04-02T23:49:14"/>
+	<testcase classname="test_function3_tests.TestFunction3" name="test_case10" time="0.011" timestamp="2024-04-02T23:49:14"/>
+	<testcase classname="test_function3_tests.TestFunction3" name="test_case11" time="0.004" timestamp="2024-04-02T23:49:15"/>
+	<testcase classname="test_function3_tests.TestFunction3" name="test_case2" time="0.004" timestamp="2024-04-02T23:49:15"/>
+	<testcase classname="test_function3_tests.TestFunction3" name="test_case3" time="0.004" timestamp="2024-04-02T23:49:15"/>
+	<testcase classname="test_function3_tests.TestFunction3" name="test_case4" time="0.004" timestamp="2024-04-02T23:49:15"/>
+	<testcase classname="test_function3_tests.TestFunction3" name="test_case5" time="0.005" timestamp="2024-04-02T23:49:15"/>
+	<testcase classname="test_function3_tests.TestFunction3" name="test_case6" time="0.004" timestamp="2024-04-02T23:49:15"/>
+	<testcase classname="test_function3_tests.TestFunction3" name="test_case7" time="0.004" timestamp="2024-04-02T23:49:15"/>
+	<testcase classname="test_function3_tests.TestFunction3" name="test_case8" time="0.004" timestamp="2024-04-02T23:49:15"/>
+	<testcase classname="test_function3_tests.TestFunction3" name="test_case9" time="0.001" timestamp="2024-04-02T23:49:15"/>
+</testsuite>

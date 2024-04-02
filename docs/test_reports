@@ -1,0 +1,113 @@
+(.venv) natedamstra@Nates-MacBook-Pro G88.2024.T06.EG2 % pyb -v
+PyBuilder version 0.13.11
+Build started at 2024-04-02 23:49:08
+------------------------------------------------------------
+[INFO]  Building G88.2024.T06.EG2 version 1.0.dev0
+[INFO]  Executing build in /Users/natedamstra/PycharmProjects/G88.2024.T06.EG2
+[INFO]  Going to execute task publish
+[INFO]  Processing plugin packages 'coverage>=6.0' to be installed with {'upgrade': True}
+[INFO]  Processing plugin packages 'flake8>=4.0' to be installed with {'upgrade': True}
+[INFO]  Processing plugin packages 'pypandoc~=1.4' to be installed with {'upgrade': True}
+[INFO]  Processing plugin packages 'setuptools>=38.6.0' to be installed with {}
+[INFO]  Processing plugin packages 'twine>=1.15.0' to be installed with {'upgrade': True}
+[INFO]  Processing plugin packages 'unittest-xml-reporting>=3.0.4' to be installed with {'upgrade': True}
+[INFO]  Processing plugin packages 'wheel>=0.34.0' to be installed with {}
+[INFO]  Creating target 'build' VEnv in '/Users/natedamstra/PycharmProjects/G88.2024.T06.EG2/target/venv/build/cpython-3.9.6.final.0'
+[INFO]  Creating target 'test' VEnv in '/Users/natedamstra/PycharmProjects/G88.2024.T06.EG2/target/venv/test/cpython-3.9.6.final.0'
+[INFO]  Requested coverage for tasks: pybuilder.plugins.python.unittest_plugin:run_unit_tests
+[INFO]  Running unit tests
+[INFO]  Executing unit tests from Python modules in /Users/natedamstra/PycharmProjects/G88.2024.T06.EG2/src/unittest/python
+Booking with the same id_card already exists.
+no manipulation to data in reservation
+Stay with the same localizer already exists.
+no manipulation to data in reservation
+Stay successfully added.
+stays file does not exist
+checkout successfully added.
+checkout was successfully validated
+checkout with the same room key already exists.
+no room key exists in stay file.
+no room key exists in stay file.
+checkout successfully added.
+checkout was successfully validated
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+[INFO]  Executed 119 unit tests
+[INFO]  All unit tests passed.
+[INFO]  Building distribution in /Users/natedamstra/PycharmProjects/G88.2024.T06.EG2/target/dist/G88.2024.T06.EG2-1.0.dev0
+[INFO]  Copying scripts to /Users/natedamstra/PycharmProjects/G88.2024.T06.EG2/target/dist/G88.2024.T06.EG2-1.0.dev0/scripts
+[INFO]  Writing setup.py as /Users/natedamstra/PycharmProjects/G88.2024.T06.EG2/target/dist/G88.2024.T06.EG2-1.0.dev0/setup.py
+[INFO]  Collecting coverage information for 'pybuilder.plugins.python.unittest_plugin:run_unit_tests'
+[WARN]  ut_coverage_branch_threshold_warn is 0 and branch coverage will not be checked
+[WARN]  ut_coverage_branch_partial_threshold_warn is 0 and partial branch coverage will not be checked
+[INFO]  Running unit tests
+[INFO]  Executing unit tests from Python modules in /Users/natedamstra/PycharmProjects/G88.2024.T06.EG2/src/unittest/python
+Booking with the same id_card already exists.
+no manipulation to data in reservation
+Stay with the same localizer already exists.
+no manipulation to data in reservation
+Stay successfully added.
+stays file does not exist
+checkout successfully added.
+checkout was successfully validated
+checkout with the same room key already exists.
+no room key exists in stay file.
+no room key exists in stay file.
+checkout successfully added.
+checkout was successfully validated
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+Booking with the same id_card already exists.
+[INFO]  Executed 119 unit tests
+[INFO]  All unit tests passed.
+[INFO]  Overall pybuilder.plugins.python.unittest_plugin.run_unit_tests coverage is 85%
+[INFO]  Overall pybuilder.plugins.python.unittest_plugin.run_unit_tests branch coverage is 82%
+[INFO]  Overall pybuilder.plugins.python.unittest_plugin.run_unit_tests partial branch coverage is 88%
+[INFO]  Overall G88.2024.T06.EG2 coverage is 85%
+[INFO]  Overall G88.2024.T06.EG2 branch coverage is 82%
+[INFO]  Overall G88.2024.T06.EG2 partial branch coverage is 88%
+[INFO]  Building binary distribution in /Users/natedamstra/PycharmProjects/G88.2024.T06.EG2/target/dist/G88.2024.T06.EG2-1.0.dev0
+[INFO]  Running Twine check for generated artifacts
+------------------------------------------------------------
+BUILD SUCCESSFUL
+------------------------------------------------------------
+Build Summary
+             Project: G88.2024.T06.EG2
+             Version: 1.0.dev0
+      Base directory: /Users/natedamstra/PycharmProjects/G88.2024.T06.EG2
+        Environments:
+               Tasks: prepare [4039 ms] compile_sources [0 ms] run_unit_tests [1450 ms] package [11 ms] run_integration_tests [0 ms] verify [0 ms] coverage [2219 ms] publish [1529 ms]
+Build finished at 2024-04-02 23:49:19
+Build took 10 seconds (10472 ms)
+
