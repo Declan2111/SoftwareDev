@@ -1,0 +1,13 @@
+__init__.py
+setup.py
+G88.2024.T06.EG2.egg-info/PKG-INFO
+G88.2024.T06.EG2.egg-info/SOURCES.txt
+G88.2024.T06.EG2.egg-info/dependency_links.txt
+G88.2024.T06.EG2.egg-info/namespace_packages.txt
+G88.2024.T06.EG2.egg-info/top_level.txt
+G88.2024.T06.EG2.egg-info/zip-safe
+UC3MTravel/HotelManagementException.py
+UC3MTravel/HotelManager.py
+UC3MTravel/HotelReservation.py
+UC3MTravel/HotelStay.py
+UC3MTravel/__init__.py
