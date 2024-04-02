@@ -52,10 +52,10 @@
       "sum_lines_not_covered": 0
     },
     {
-      "branches": 78,
-      "branches_missing": 30,
+      "branches": 100,
+      "branches_missing": 42,
       "branches_partial": 10,
-      "coverage": 67.5925925925926,
+      "coverage": 68.05555555555556,
       "lines": [
         3,
         4,
@@ -299,7 +299,6 @@
         151,
         177,
         209,
-        236,
         241,
         242,
         243,
@@ -348,7 +347,7 @@
       ],
       "module": "uc3m_travel.hotel_manager",
       "sum_lines": 216,
-      "sum_lines_not_covered": 70
+      "sum_lines_not_covered": 69
     },
     {
       "branches": 0,
@@ -509,7 +508,7 @@
       "sum_lines_not_covered": 14
     }
   ],
-  "overall_branch_coverage": 61.53846153846154,
-  "overall_branch_partial_coverage": 87.17948717948718,
-  "overall_coverage": 72.6470588235294
+  "overall_branch_coverage": 58.0,
+  "overall_branch_partial_coverage": 90.0,
+  "overall_coverage": 72.94117647058823
 }

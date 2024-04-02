@@ -2,7 +2,7 @@
 import unittest
 from freezegun import freeze_time
 
-from uc3m_travel import HotelManagementException
+from uc3m_travel import HotelManagementException, HotelReservation
 from uc3m_travel import HotelManager
 
 ValidClass = HotelManager()
@@ -430,13 +430,6 @@ class TestFunction2(unittest.TestCase):
 
         self.assertEqual(str(context.exception), "JSON Decode Error - Wrong JSON Format")
 
-    # @freeze_time("30/05/2024")
-    # def test_manip1(self):
-    #     """Testing Manipulation"""
-    #     with self.assertRaises(HotelManagementException) as context:
-    #         ValidClass.guest_arrival("src/unittest/python/JSONTests/ManipulationTest1.json")
-    #     self.assertEqual(str(context.exception), "Manipulation is present in reservation file")
-
     @freeze_time("29/07/2024")
     def test_manipulation(self):
         """Testing manipulation of file"""
@@ -449,9 +442,3 @@ class TestFunction2(unittest.TestCase):
     def test_date_check(self):
         """checks date comparison works"""
         self.assertTrue(ValidClass.departure_date_valid("30/03/2024"))
-
-    def test_thing(self):
-        """"Testing valid booking and adding to bookings file"""
-        res = ValidClass.room_reservation(4929319438123457, "Delcan Lowney", "01234567L",
-                                                    123456789, "double", "29/07/2024", 6)
-        self.assertEqual(res.localizer, "69d1e39d96ac983e8fa7359c0f7a6bda")
