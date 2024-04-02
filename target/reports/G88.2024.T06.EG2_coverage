@@ -1,0 +1,10 @@
+Name                                     Stmts   Miss  Cover
+------------------------------------------------------------
+UC3MTravel/HotelManagementException.py      10     10     0%
+UC3MTravel/__init__.py                       0      0   100%
+UC3MTravel/hotelManager.py                 216    216     0%
+UC3MTravel/hotelReservation.py              61     61     0%
+UC3MTravel/hotelStay.py                     49     49     0%
+__init__.py                                  0      0   100%
+------------------------------------------------------------
+TOTAL                                      336    336     0%
