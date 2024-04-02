@@ -18,5 +18,15 @@
         "num_days": 6,
         "room_type": "double",
         "localizer": "69d1e39d96ac983e8fa7359c0f7a6bda"
+    },
+    {
+        "id_card": "99999999R",
+        "name_surname": "Nathan Damstra",
+        "credit_card": 4929319438123457,
+        "phone_number": 123456789,
+        "arrival_date": "27/05/2024",
+        "num_days": 3,
+        "room_type": "double",
+        "localizer": "5b07fc19e6151c0a624c44bbcb3cf7fc"
     }
 ]

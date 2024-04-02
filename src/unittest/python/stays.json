@@ -1,19 +1,11 @@
 [
     {
         "alg": "SHA-256",
-        "typ": "single",
-        "localizer": "c45cdbc85ababf7d4c215d77a767c94d",
-        "arrival": "2024-03-27T13:18:43.594242",
-        "departure": "2024-04-01T13:18:43.594242",
-        "room_key": "d298f9b6c49f753ec4a157a7672436883d1fe9eca3623da0dc5180ea0d6d82b8"
-    },
-    {
-        "alg": "SHA-256",
         "typ": "double",
         "localizer": "5b07fc19e6151c0a624c44bbcb3cf7fc",
         "idCard": "99999999R",
         "arrival": "2024-05-27T00:00:00",
         "departure": "2024-05-30T00:00:00",
-        "room_key": "74ebc2e2876a9eb2815fef93282252558492552a4f8998eaeb60d71d85017098"
+        "room_key": "74EBc2e2876a9eb2815fef9328234/558492552a4f8998eaeb60d71d85017098"
     }
 ]

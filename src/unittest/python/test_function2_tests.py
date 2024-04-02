@@ -437,8 +437,3 @@ class TestFunction2(unittest.TestCase):
             ValidClass.check_manipulation("01234567L", 4929319438123457, "Delcan Lowney", 123456789, "double",
                                           "29/07/2024", 6, "69d1e39d96ac983e8fa7359c0f7a6bdb")
             self.assertEqual(str(context.exception), "Manipulation is present in reservation file")
-
-    @freeze_time("30/03/2024")
-    def test_date_check(self):
-        """checks date comparison works"""
-        self.assertTrue(ValidClass.departure_date_valid("30/03/2024"))

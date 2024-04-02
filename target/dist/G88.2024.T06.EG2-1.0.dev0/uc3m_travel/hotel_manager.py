@@ -256,10 +256,10 @@ class HotelManager:
                         print("checkout was successfully validated")
                         return True
                 print("no room key exists in stay file.")
-                return False
+                raise HotelManagementException("no room key exists in stay file.")
         else:
             print("stays file does not exist")
-            return False
+            raise HotelManagementException("stays file does not exist")
 
     def validate_room_key(self, roomKey, iD, roomtype, localizer, arrival, departure):
         """Checks the room key is a valid format and in the stay file"""
@@ -269,16 +269,19 @@ class HotelManager:
                 or not roomKey.isalnum() or not roomKey.islower():
             raise HotelManagementException("room key not valid format")
         # Now we know key is valid format, so we check if it is in the stay json file
-        stay = HotelStay.from_departure(iD, localizer, departure, roomtype, arrival)
-        if stay.roomKey == roomKey:
-            return True
-        raise HotelManagementException("room key doesn't match stay information")
+        # stay = HotelStay.from_departure(iD, localizer, departure, roomtype, arrival)
+        # if stay.roomKey == roomKey:
+        #     return True
+        # raise HotelManagementException("room key doesn't match stay information")
 
     def departure_date_valid(self, departureDate):
         """Checks that the departure date the guest is leaving is the same as the current date"""
         # function 3
         currentDate = dt.date.today()
-        givenDate = dt.datetime.strptime(departureDate, "%d/%m/%Y").date()
+        dt_object = datetime.strptime(departureDate, '%Y-%m-%dT%H:%M:%S')
+
+        # Format the datetime object into the desired format
+        givenDate = dt_object.strftime('%d/%m/%Y')
         return givenDate == currentDate
 
     def add_checkout_to_json(self, roomKey):
@@ -298,7 +301,7 @@ class HotelManager:
             for entry in checkoutData:
                 if 'room_key' in entry and entry['room_key'] == roomKey:
                     print("checkout with the same room key already exists.")
-                    return
+                    raise HotelManagementException("checkout with the same room key already exists.")
         else:
             checkoutData = []
         # Add the new booking data

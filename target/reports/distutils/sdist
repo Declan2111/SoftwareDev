@@ -1,9 +1,9 @@
 WARNING: '.' not a valid package name; please use only .-separated package names in setup.py
 running clean
-'build/temp.macosx-10.9-universal2-cpython-312' does not exist -- can't clean it
+'build/temp.macosx-10.9-x86_64-cpython-39' does not exist -- can't clean it
 'build/lib' does not exist -- can't clean it
-'build/bdist.macosx-10.9-universal2' does not exist -- can't clean it
-'build/scripts-3.12' does not exist -- can't clean it
+'build/bdist.macosx-10.9-x86_64' does not exist -- can't clean it
+'build/scripts-3.9' does not exist -- can't clean it
 running sdist
 running egg_info
 creating G88.2024.T06.EG2.egg-info
@@ -19,7 +19,7 @@ warning: sdist: standard file not found: should have one of README, README.rst, 
 running check
 creating G88.2024.T06.EG2-1.0.dev0
 creating G88.2024.T06.EG2-1.0.dev0/G88.2024.T06.EG2.egg-info
-creating G88.2024.T06.EG2-1.0.dev0/UC3MTravel
+creating G88.2024.T06.EG2-1.0.dev0/uc3m_travel
 copying files to G88.2024.T06.EG2-1.0.dev0...
 copying __init__.py -> G88.2024.T06.EG2-1.0.dev0
 copying setup.py -> G88.2024.T06.EG2-1.0.dev0
@@ -29,11 +29,11 @@ copying G88.2024.T06.EG2.egg-info/dependency_links.txt -> G88.2024.T06.EG2-1.0.d
 copying G88.2024.T06.EG2.egg-info/namespace_packages.txt -> G88.2024.T06.EG2-1.0.dev0/G88.2024.T06.EG2.egg-info
 copying G88.2024.T06.EG2.egg-info/top_level.txt -> G88.2024.T06.EG2-1.0.dev0/G88.2024.T06.EG2.egg-info
 copying G88.2024.T06.EG2.egg-info/zip-safe -> G88.2024.T06.EG2-1.0.dev0/G88.2024.T06.EG2.egg-info
-copying UC3MTravel/HotelManagementException.py -> G88.2024.T06.EG2-1.0.dev0/UC3MTravel
-copying UC3MTravel/HotelManager.py -> G88.2024.T06.EG2-1.0.dev0/UC3MTravel
-copying UC3MTravel/HotelReservation.py -> G88.2024.T06.EG2-1.0.dev0/UC3MTravel
-copying UC3MTravel/HotelStay.py -> G88.2024.T06.EG2-1.0.dev0/UC3MTravel
-copying UC3MTravel/__init__.py -> G88.2024.T06.EG2-1.0.dev0/UC3MTravel
+copying uc3m_travel/__init__.py -> G88.2024.T06.EG2-1.0.dev0/uc3m_travel
+copying uc3m_travel/hotel_management_exception.py -> G88.2024.T06.EG2-1.0.dev0/uc3m_travel
+copying uc3m_travel/hotel_manager.py -> G88.2024.T06.EG2-1.0.dev0/uc3m_travel
+copying uc3m_travel/hotel_reservation.py -> G88.2024.T06.EG2-1.0.dev0/uc3m_travel
+copying uc3m_travel/hotel_stay.py -> G88.2024.T06.EG2-1.0.dev0/uc3m_travel
 copying G88.2024.T06.EG2.egg-info/SOURCES.txt -> G88.2024.T06.EG2-1.0.dev0/G88.2024.T06.EG2.egg-info
 Reading configuration from G88.2024.T06.EG2-1.0.dev0/setup.cfg
 Adding new section [egg_info] to G88.2024.T06.EG2-1.0.dev0/setup.cfg
